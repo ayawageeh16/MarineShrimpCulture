@@ -28,13 +28,14 @@ public class TraditionalAndModernData {
         description1="Aquamimicry is the intersection of aquatic biology and technology (symbiotic) synergistically in mimicking nature of aquatic ecosystems to create living organisms for the well-being development of aquatic animals.\n" +
                 "We are accelerating advancement in the field of aquaculture by combining microbial activity with natural feed source in a coordinated fashion; we create living organisms to rebalance our environment for Sustainable Aquaculture.\n" +
                 "This is done by fermenting a carbon source, such as rice or wheat bran," +
-                " with probiotics (like Bacillus sp.) and releasing their nutrients.\n";
+                "with probiotics (like Bacillus sp.) and releasing their nutrients.\n";
         title2="Fermentation process in aquamimicry";
-        description2="A complex carbon source, such as rice, wheat bran or soya bean, is mixed with water (1:5-10 ratio) and probiotics under aeration for 24 hours. If the bran is finely powdered, the entire mixture is added slowly to the pond. If crumbled, the upper “milk” or “juice” is added to the pond and the bran solids are fed to fish in the biofilter pond.\n" +
+        description2="A complex carbon source, such as rice, wheat bran or soya bean, is mixed with water (1:5-10 ratio) and probiotics under aeration for 24 hours. If the bran is finely powdered, the entire mixture is added slowly to the pond.\n " +
+                "If crumbled, the upper “milk” or “juice” is added to the pond and the bran solids are fed to fish in the biofilter pond.\n" +
                 "Stoking density :20 pcs per sqm\n" +
                 "Dose 1 ppm of fermented rice bran FRB/day\n";
         title3="Advantages of aquamimicry";
-        description3="•\tEliminating disease\n" +
+        description3="•\tEliminating disease\n\n" +
                 "•\tMaintain water quality\n" +
                 "•\tMinimizing water exchanges \n" +
                 "•\tDecreasing the feed conversion ratio\n" +
@@ -46,34 +47,36 @@ public class TraditionalAndModernData {
         description4="";
         title5="";
         description5="";
-        image1 = R.drawable.aqua;
-        image2 =R.drawable.aquamimcry;
+        image1 = R.drawable.aquax;
+        image2 =R.drawable.aquamimcryx;
         model= new TraditionalAndModernModel(2,title1,description1,title2,description2,title3,description3,
                 title4,description4,title5,description5,image1,image2,0);
         list.add(model);
 
         title1="Biofloc technology (aerated mixed ponds)";
-        description1="In recent years the aquaculture industry has come under scrutiny for contributing to environmental degradation.  Interest in closed aquaculture systems for the production of shrimp and fish is increasing, mostly due to some key environmental and marketing advantages over extensive systems. Bioflocs are aggregates (flocs) of algae, bacteria, protozoans, and other kinds of particulate organic matter such as feces and uneaten feed. Each floc is held together in a loose matrix of mucus that is secreted by bacteria, bound by filamentous microorganism. The biofloc community also includes animals that are grazers of flocs, such as some zooplankton and nematodes. Large bioflocs can be seen with the naked eye, but most are microscopic. Flocs in a typical greenwater biofloc system are rather large, around 50 to 200 microns, and will settle easily in calm water.\n" +
-                "\uF0A7\tWhen water is reused, the risk of discharging pollution is reduced This is a benefit for protecting natural resources\n" +
-                "\uF0A7\tEnvironmental regulations and discharge fees are inhibitive in most regions\n" +
-                "\uF0A7\tIntroduction of contaminants and pathogen from the environment to cultured animals is unlikely, especially when biosecurity measures such as source water disinfection are employed. \n" +
-                "\uF0A7\tUsing closed systems limits the chance of animal escapement.\n" +
-                "\uF0A7\tHelping to prevent exotic species and disease introductions to the natural environment.\n" +
-                "\uF0A7\tCulturing shrimp in biofloc systems is that multiple external filtration systems are not required.\n" +
-                "\uF0A7\tReducing start up and operational expenses.\n" +
-                "\uF0A7\timproved growth rate.\n" +
-                "\uF0A7\timproved feed conversion ratio.\n" +
-                "\uF0A7\tThe dry-weight protein content of biofloc ranges from 25 to 50 percent.\n" +
-                "\uF0A7\tTreatment of waste organic.\n" +
-                "Biofloc also has disadvantages such as\n" +
-                "\uF0A7\tHigh electricity required\n" +
-                "\uF0A7\tProfessional workers.\n" +
-                "Suitable culture species for biofloc: -\n" +
+        description1="In recent years the aquaculture industry has come under scrutiny for contributing to environmental degradation.  Interest in closed aquaculture systems for the production of shrimp and fish is increasing," +
+                " mostly due to some key environmental and marketing advantages over extensive systems. Bioflocs are aggregates (flocs) of algae, bacteria, protozoans, and other kinds of particulate organic matter such as feces and uneaten feed. Each floc is held together in a loose matrix of mucus that is secreted by bacteria, bound by filamentous microorganism. " +
+                "The biofloc community also includes animals that are grazers of flocs, such as some zooplankton and nematodes. Large bioflocs can be seen with the naked eye, but most are microscopic. Flocs in a typical greenwater biofloc system are rather large, around 50 to 200 microns, and will settle easily in calm water.\n" +
+                "•\tWhen water is reused, the risk of discharging pollution is reduced This is a benefit for protecting natural resources\n" +
+                "•\tEnvironmental regulations and discharge fees are inhibitive in most regions\n" +
+                "•\tIntroduction of contaminants and pathogen from the environment to cultured animals is unlikely, especially when biosecurity measures such as source water disinfection are employed. \n\n" +
+                "•\tUsing closed systems limits the chance of animal escapement.\n" +
+                "•\tHelping to prevent exotic species and disease introductions to the natural environment.\n" +
+                "•\tCulturing shrimp in biofloc systems is that multiple external filtration systems are not required.\n" +
+                "•\tReducing start up and operational expenses.\n" +
+                "•\timproved growth rate.\n" +
+                "•\timproved feed conversion ratio.\n" +
+                "•\tThe dry-weight protein content of biofloc ranges from 25 to 50 percent.\n" +
+                "•\tTreatment of waste organic.\n" +
+                "Biofloc also has disadvantages such as\n\n" +
+                "•\tHigh electricity required\n" +
+                "•\tProfessional workers.\n" +
+                "Suitable culture species for biofloc: \n \n" +
                 "A basic factor in designing a biofloc system is the species to be cultured. Biofloc systems work best with species that are able to derive some nutritional benefit from the direct consumption of floc. Biofloc systems are also most suitable for species that can tolerate high solids concentration in water and are generally tolerant of poor water quality. Species such as shrimp and tilapia have physiological adaptations that allow them to consume biofloc and digest microbial protein, thereby taking advantage of biofloc as a food resource. " +
                 "Nearly all biofloc systems are used to grow shrimp, tilapia, or carps. Channel catfish and hybrid striped bass.\n";
         title2="Basic types of biofloc systems";
         description2="Few types of biofloc systems have been used in commercial aquaculture. The two basic types are those that are exposed to natural light and biofloc systems not exposed to natural light. include outdoor, lined ponds or tanks for the culture of shrimp or lined raceways for shrimp culture in greenhouses. Most biofloc systems in commercial use are greenwater. However, some biofloc systems (raceways and tanks) have been" +
-                " installed in closed buildings with no exposure to natural light. These systems are operated as “brown- water” biofloc " +
+                "installed in closed buildings with no exposure to natural light. These systems are operated as “brown- water” biofloc " +
                 "systems.";
         title3="Densities";
         description3="The optimal shrimp density for a super-intensive system will depend on management and production goals.\n" +
@@ -102,7 +105,7 @@ public class TraditionalAndModernData {
         description3="1.\tProduction costs of closed systems are much higher than those of open systems.\n" +
                 "2.\tenvironmental problems still remain when waste water is discharged from such farming systems.\n";
         title4="THE RAS DESIGN";
-        description4="1.\tGrowing tank,\n" +
+        description4="1.\tGrowing tank \n\n" +
                 "2.\tSump of particulate removal device,\n" +
                 "3.\tBiofilter,\n" +
                 "4.\tOxygen injection with U-tube aeration and,\n" +
@@ -111,7 +114,7 @@ public class TraditionalAndModernData {
                 "\n" +
                 "These systems have high stocking densities (greater than 300 shrimp/m3) resulting in high biomass (greater than 3-6 kg/m3).\n" +
                 "A 2009 study at the lab showed that high yields (9.29 kg/m3) and survival (88%) could be achieved with no water exchange and a density of 500 shrimp/m3 while using foam fractionators or settling tanks (STs) to regulate levels of particulate matter in the culture medium.\n" +
-                "Zero water exchange system:\n" +
+                "Zero water exchange system:\n\n" +
                 "\n" +
                 "1.\tThe study was conducted in six 40-m3 raceways.\n" +
                 "2.\tEach25.4x2.7(68.5m2) raceway was lined with EPDM(ethylenepropylenedieneterpolymer)\n" +
@@ -131,10 +134,10 @@ public class TraditionalAndModernData {
         description1="Greenhouse technology is the unique technique of providing favorable conditions to shrimp. ";
         title2="Advantages";
         description2="1.\tProtected Environment for Shrimp Cultivation Ponds\n" +
-                "2.\tTemperature control enabling:\n" +
+                "2.\tTemperature control enabling:\n\n" +
                 "a.\twinter shrimp farming\n" +
                 "b.\thigh survival rates\n" +
-                "c.\tquality improvement\n" +
+                "c.\tquality improvement\n\n" +
                 "3.\tEarly season harvesting during high market demand in low supply seasons.\n" +
                 "4.\tHigh profitability before and after shrimp sales peak.\n" +
                 "5.\tGood return of investment\n" +

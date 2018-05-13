@@ -43,7 +43,7 @@ public class WaterQualityData {
                 "\n" +
                 "The problem of low alkalinity (<20 mg/l as CaC03) can be abated through application of liming materials such as dolomite and limestone.\n" +
                 "\n" +
-                " they destroy the initial inoculum of decomposing bacteria which will increase nutrient organic load on pond bottom.\n" +
+                "they destroy the initial inoculum of decomposing bacteria which will increase nutrient organic load on pond bottom.\n" +
                 "\n" +
                 "Liming is done whenever the pH drops below 7.5 or the daily fluctuation in pH is more than 0.5.\n";
         image1 =  R.drawable.waterq1;
@@ -73,7 +73,7 @@ public class WaterQualityData {
                 "In the case of low stocking density, water exchange is not required in well prepared ponds for first 30 days only water Level has to be maintained due to evaporation loss.\n" +
                 "\n" +
                 " water exchange should be Exchange only be used when necessary to maintain the optimum water quality .\n \n" +
-                "- Water exchange should be done only under the following pond conditions:\n" +
+                "- Water exchange should be done only under the following pond conditions:\n\n" +
                 "1.\tTransparency greater than 50 cm or less than 20 cm\n" +
                 "2.\tpH less than 7.5 or greater than8.5\n" +
                 "3.\tpH fluctuation in a day greater than 0.5\n" +
@@ -88,10 +88,10 @@ public class WaterQualityData {
         description="4.\tAeration\n" +
                 "is necessary in high stocking densities and to maintain water quality.\n" +
                 "\n" +
-                "Normally aeration will be required during the following situations:\n" +
-                "1.cloudy and rainy days.\n" +
-                "2.dissolved oxygen level dropping below 4 mg/l especially during early morning hours when the DO level will be at its minimum.\n" +
-                "3.Excessive algal blooms & application of water treatment additives. \n" +
+                "Normally aeration will be required during the following situations:\n\n" +
+                "1.\tcloudy and rainy days.\n" +
+                "2.\tdissolved oxygen level dropping below 4 mg/l especially during early morning hours when the DO level will be at its minimum.\n" +
+                "3.\tExcessive algal blooms & application of water treatment additives. \n" +
                 "- Paddle wheel aerators @ 4-6 no/ha are generally used in shrimp ponds.\n";
         image1 =  R.drawable.waterquality61;
         image2 =  R.drawable.waterquality62;
@@ -115,11 +115,12 @@ public class WaterQualityData {
         title ="Crisis management";
         description="Effects of various abiotic factors on shrimp farming and their remedial measures are summarized in the following- Tables\n" +
                 "\n" +
-                "Includes :\n" +
+                "Includes :\n\n" +
                 "Chemical factors \n" +
                 "Gaseous factors \n";
-        numberOfImages=0;
-        model= new WaterQualityModel(title,description,0,0,0,numberOfImages);
+        image1 = R.drawable.crisismanagement;
+        numberOfImages=1;
+        model= new WaterQualityModel(title,description,image1,0,0,numberOfImages);
         list.add(model);
 
         title ="Chemical factors ";

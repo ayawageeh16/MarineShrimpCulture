@@ -58,14 +58,14 @@ public class HarvestAndPostHarvestData {
         list.add(model);
 
         title = "total harvest";
-        description = "following steps are followed by semi – intensive and intensive culture:\n" +
-                "1-Reduce the water depth to 80 cm one day before the harvest date.\n" +
-                "2-Harvest net is properly attached and installed into the water gate of the drain canal.\n" +
-                "3-Remaining prawns left at the pond bottom can be harvested manually by hand picking them up.\n" +
-                "4-Prepare two tanks half-filled with water, one tank is for washing and the other is for chilling the prawns.\n" +
-                "5-After washing the prawns it must be transferred immediately to the chilling tank.\n" +
-                "6.From the chilling tank, prawns are transferred to the sorting table to classify them according to size.\n" +
-                "7.Classified prawns are packed in Styrofoam boxes with alternate layers of ice and prawns to preserve temporarily for transportation\ne";
+        description = "following steps are followed by semi – intensive and intensive culture:\n\n" +
+                "1-\tReduce the water depth to 80 cm one day before the harvest date.\n" +
+                "2-\tHarvest net is properly attached and installed into the water gate of the drain canal.\n" +
+                "3-\tRemaining prawns left at the pond bottom can be harvested manually by hand picking them up.\n" +
+                "4-\tPrepare two tanks half-filled with water, one tank is for washing and the other is for chilling the prawns.\n" +
+                "5-\tAfter washing the prawns it must be transferred immediately to the chilling tank.\n" +
+                "6-\tFrom the chilling tank, prawns are transferred to the sorting table to classify them according to size.\n" +
+                "7-\tClassified prawns are packed in Styrofoam boxes with alternate layers of ice and prawns to preserve temporarily for transportation\ne";
         image1= R.drawable.totalharvest;
         model = new HarvestAndPostHarvestModel(1, title, description, image1, 0);
         list.add(model);

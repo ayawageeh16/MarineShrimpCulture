@@ -43,7 +43,7 @@ public class ManagementPracticeData {
 
 
         title ="For ponds with full HDPE";
-        description ="pond preparation includes\n" +
+        description ="pond preparation includes:\n \n" +
                 "1-\tcleaning the pond bottom and walls of the rest of the dirt (mud, tritip, shellfish and others)\n" +
                 "2-\tcleaning and repair of plastic and Paddle Wheel Aerator (PWA)\n" +
                 "3-\tsterilization using chlorine at the bottom of the pond and in the pipe.\n";
@@ -64,7 +64,7 @@ public class ManagementPracticeData {
                 "Numerous larval stages are passed before reaching the post larval stage.\n" +
                 "Natural food (phytoplankton) must be provided to the larval stages grown in the hatchery.\n" +
                 "However, only desirable shrimp species are raised and contamination with undesirable organisms is not a problem.\n";
-        image1 = R.drawable.seedsource1;
+        image1 = R.drawable.wild1;
         image2 = R.drawable.seedcource21;
         model = new ManagementPracticeModel(2,title,description,image1, image2, 0);
         list.add(model);
@@ -96,12 +96,12 @@ public class ManagementPracticeData {
         title ="Acclimation of the fry";
         description ="Important step before stocking fry to pond\n" +
                 "purpose is to make the both transport and pond water condition (temperature and salinity) to be same (or almost same) to minimize stress on the fry\n" +
-                " Water salinity, maximum difference in salinity is 2 ppt.\n" +
-                " Water temperature, the maximum difference is 2°C.\n" +
+                "Water salinity, maximum difference in salinity is 2 ppt.\n" +
+                "Water temperature, the maximum difference is 2°C.\n" +
                 "Time of stocking\n" +
                 "morning (6-9 am) [preferable]\n" +
                 "Afternoon (5-9 pm).\n" +
-                " Paddle wheel must be activated; at least 3 – 4 hours a day for 2-3 days before stocking date, " +
+                "Paddle wheel must be activated; at least 3 – 4 hours a day for 2-3 days before stocking date, " +
                 "and 3-4 hours before the stocking of fry, to ensure adequate D.O.\n";
         image1 = R.drawable.acclim1;
         image2 = R.drawable.acclim2;
@@ -128,7 +128,7 @@ public class ManagementPracticeData {
                 "After the first month, feeding on the next month following the feed trays control. \n" +
                 "For the pond with an area of 0.5 ha, the recommended amount of feed trays is 3-4 units.  \n" +
                 "Addition and reduction in feed made in accordance with the results obtained in the feed trays.\n" +
-                " If the feed on feed trays expires, the feed for the next day can be added up to 5% of the feed today.  \n" +
+                "If the feed on feed trays expires, the feed for the next day can be added up to 5% of the feed today.  \n" +
                 "if the feed in feed trays not exhausted, the feed for the next day can be cut to 40%. \n" +
                 "\n";
         image1= R.drawable.feeding;

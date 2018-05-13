@@ -32,12 +32,12 @@ public class CommonSpeciesData {
         tolerance ="They tolerate a wide range of salinities and temperatures.";
         protein ="Protein between 40 and 50% gave the best growth.";
         survival ="survivals are low (20 to 30%). Tigers are very susceptible to two of the most lethal shrimp viruses: yellow head and white spot disease.";
-        market ="1. Penaeus monodon is the most prominent farmed crustacean product in international trade.\n" +
-                "2. p.monodon has driven a significant expansion in aquaculture in many developing countries in Asia.\n" +
-                "3. Its price is still higher than L. vannamei.\n";
+        market ="1.\tPenaeus monodon is the most prominent farmed crustacean product in international trade.\n" +
+                "2.\tp.monodon has driven a significant expansion in aquaculture in many developing countries in Asia.\n" +
+                "3.\tIts price is still higher than L. vannamei.\n";
         spf ="Based on the highly successful development of Specific Pathogen Free (SPF)  of Penaeus vannamei brood stock ,the U.S. shrimp industry develop a stock of SPF P. monodon which is the most important (in volume and value) farm-raised shrimp worldwide.\n" +
                 "Major elements of an SPF process include:\n" +
-                "1. Capture of apparently healthy wild stock from areas of low disease prevalence.\n" +
+                "1.\tCapture of apparently healthy wild stock from areas of low disease prevalence.\n" +
                 "2.\tIndividual primary quarantine where the shrimp can be individually screened for specific pathogens and the contaminated individuals destroyed.\n" +
                 "3.\tThe shrimp are then transferred to secondary quarantine where they are reared to brood stock size and monitored regularly.\n" +
                 "4.\tThe disease-free broodstock transferred to the breeding center for production.\n" +

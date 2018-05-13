@@ -23,13 +23,13 @@ public class SiteSelectionData {
                 "The determination of a site for shrimp farming is made only after through analysis of information on topography, ecosystem, meteorological and socioeconomic conditions.\n";
 
         criteria = "1. Water quality\n" +
-                "2. Tidal fluctuations\n" +
-                "3. Soil\n" +
-                "4. Topography\n" +
-                "5. Vegetation\n" +
-                "6. Source of seed\n" +
-                "7. Accessibility\n" +
-                "8. Other factor\n";
+                "2.\tTidal fluctuations\n" +
+                "3.\tSoil\n" +
+                "4.\tTopography\n" +
+                "5.\tVegetation\n" +
+                "6.\tSource of seed\n" +
+                "7.\tAccessibility\n" +
+                "8.\tOther factor\n";
 
         waterQuality ="Water quality includes all the inherent physico-chemical and microbiological characteristics of water.\n" +
                 "\n" +
@@ -90,12 +90,12 @@ public class SiteSelectionData {
         accessibilty = "Accessibility is an important consideration in site selection. Overhead cost and delay in the transport of materials and products can be minimized\n";
 
 
-        factors = " Adequate consideration should be given to a number of farm related matters such as :-\n" +
-                "1. the availability and quality of labor, \n" +
-                "2. peace and order situation \n" +
-                "3. the area concerned, \n" +
-                "4. availability and source of electricity and water supply,\n" +
-                "5. marketing channels and facilities\n" +
+        factors = " Adequate consideration should be given to a number of farm related matters such as :\n\n" +
+                "1.\tthe availability and quality of labor, \n" +
+                "2.\tpeace and order situation \n" +
+                "3.\tthe area concerned, \n" +
+                "4.\tavailability and source of electricity and water supply,\n" +
+                "5.\tmarketing channels and facilities\n" +
                 "The availability of technical assistance near the site is another advantage of a site is chosen in an aquaculture research institution.\n";
 
         source = "http://www.fao.org/docrep/field/003/ac210e/AC210E03.htm\n";
