@@ -81,7 +81,7 @@ public class HarvestAndPostHarvestData {
         description = "To avoid soft shell, the harvest time must be within 4 hours only \n" +
                 "One day before harvest, check the prawn by using cast net if soft –shell is plenty, " +
                 "delay the harvest date 3-5 days to assure better quality\n";
-        image1 = R.drawable.becarful ;
+        image1 = R.drawable.becarfulx ;
         model = new HarvestAndPostHarvestModel(1, title, description, image1, 0);
         list.add(model);
 
