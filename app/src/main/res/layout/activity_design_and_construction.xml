@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutStyle"
+    tools:context=".view.DesignAndConstruction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/design_construction_btn"
+            style="@style/ButtonsStyle"
+            android:text="Design and construction" />
+
+        <Button
+            android:id="@+id/size_shape_btn"
+            style="@style/ButtonsStyle"
+            android:text="Size and Shape" />
+
+        <Button
+            android:id="@+id/dikes_btn"
+            style="@style/ButtonsStyle"
+            android:text="Dikes" />
+
+        <Button
+            android:id="@+id/supply_drain_btn"
+            style="@style/ButtonsStyle"
+            android:text="Supply and drain" />
+
+        <Button
+            android:id="@+id/water_gate_btn"
+            style="@style/ButtonsStyle"
+            android:text="Water gate " />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutStyle"
+    tools:context=".view.Diseases"
+    android:id="@+id/diseases_scrollview">
+
+    <LinearLayout
+        android:id="@+id/diseases_linearlayout1"
+        style="@style/LayoutStyle"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/diseases_img"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="fitXY"
+            android:background="#fff"
+            android:elevation="8dp"/>
+
+        <TextView
+            android:id="@+id/diseases_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:textDirection="ltr"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/diseases_summery_tv"
+            style="@style/ArticleDescription"
+            />
+
+        <TextView
+            android:id="@+id/diseases_title1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:textDirection="ltr"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/diseases_description1_tv"
+            style="@style/ArticleDescription"
+            />
+
+        <TextView
+            android:id="@+id/diseases_title2_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:textDirection="ltr"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/diseases_description2_tv"
+            style="@style/ArticleDescription"
+            />
+
+        <TextView
+            android:id="@+id/diseases_title3_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:textDirection="ltr"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/diseases_description3_tv"
+            style="@style/ArticleDescription"
+            />
+
+        <LinearLayout
+            android:id="@+id/diseases_linearlayout2"
+            style="@style/MiniLayoutStyle"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/diseases_previous_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_left_arrow"
+                android:background="@android:color/transparent"
+                android:text="previous"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:id="@+id/diseases_next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_arrow"
+                android:background="@android:color/transparent"
+                android:text="Next"
+                android:layout_gravity="left"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

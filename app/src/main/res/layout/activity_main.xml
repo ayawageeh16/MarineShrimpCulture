@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutStyle"
+    tools:context=".view.MainActivity">
+
+    <FrameLayout
+        style="@style/LayoutStyle">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_recyclerView"
+            style="@style/MiniLayoutStyle">
+        </android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layoutDirection="ltr"
+        app:menu="@menu/navigation_menu"
+        android:textDirection="ltr"
+        android:gravity="left"
+        ></android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

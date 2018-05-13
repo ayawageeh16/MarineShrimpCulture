@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutStyle"
+    tools:context=".view.TraditionalAndModernShrimpCulture">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/modern_btn"
+            style="@style/ButtonsStyle"
+            android:text="Modern" />
+
+        <Button
+            android:id="@+id/traditional_btn"
+            style="@style/ButtonsStyle"
+            android:text="Traditional" />
+
+    </LinearLayout>
+
+</LinearLayout>

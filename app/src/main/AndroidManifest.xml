@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.marine.shrimp.culture.marineshrimpculture">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.KnowYourShrimp"
+            android:label="@string/know_your_shrimp_label"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.CommonSpecies"
+            android:label="@string/common_species_label"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.SiteSelection"
+            android:label="@string/site_selection_label"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.WaterQuality"
+            android:label="@string/water_quality_label"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.DesignAndConstruction"
+            android:label="@string/design_and_consruction"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.DesignAndConstruction2"
+            android:label="@string/design_and_consruction"
+            android:parentActivityName=".view.DesignAndConstruction" />
+        <activity
+            android:name=".view.DesignAndConstruction3"
+            android:label="@string/design_and_consruction"
+            android:parentActivityName=".view.DesignAndConstruction" />
+        <activity
+            android:name=".view.ManagementPractice"
+            android:label="@string/management_practice"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.ManagementPractice2"
+            android:label="@string/management_practice"
+            android:parentActivityName=".view.ManagementPractice" />
+        <activity
+            android:name=".view.HarvestAndPostHarvest"
+            android:label="@string/harvest_and_postharvest"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.HarvestAndPostHarvest2"
+            android:label="@string/harvest_and_postharvest"
+            android:parentActivityName=".view.HarvestAndPostHarvest" />
+        <activity
+            android:name=".view.DiseasesAndBiosecurity"
+            android:label="@string/diseases_and_biosecurity"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.Diseases"
+            android:label="@string/diseases_and_biosecurity"
+            android:parentActivityName=".view.DiseasesAndBiosecurity" />
+        <activity
+            android:name=".view.BioSecurity"
+            android:label="@string/diseases_and_biosecurity"
+            android:parentActivityName=".view.DiseasesAndBiosecurity" />
+        <activity
+            android:name=".view.TraditionalAndModernShrimpCulture"
+            android:label="@string/traditional_modern"
+            android:parentActivityName=".view.MainActivity" />
+        <activity
+            android:name=".view.TraditionalAndModernShrimpCulture2"
+            android:label="@string/traditional_modern"
+            android:parentActivityName=".view.TraditionalAndModernShrimpCulture" />
+        <activity
+            android:name=".view.AboutUs"
+            android:label="@string/about_us_label"
+            android:parentActivityName=".view.MainActivity"></activity>
+    </application>
+
+</manifest>

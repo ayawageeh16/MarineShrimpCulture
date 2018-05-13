@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutStyle"
+    tools:context=".view.HarvestAndPostHarvest">
+
+    <LinearLayout
+        style="@style/LayoutStyle"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        >
+
+        <Button
+            android:id="@+id/harvest_btn"
+            style="@style/ButtonsStyle"
+            android:text="Harvest"/>
+
+        <Button
+            android:id="@+id/methods_harvest_btn"
+            style="@style/ButtonsStyle"
+            android:text="Methods of harvesting"/>
+
+        <Button
+            android:id="@+id/be_careful_btn"
+            style="@style/ButtonsStyle"
+            android:text="Be careful"/>
+
+        <Button
+            android:id="@+id/post_harvest_btn"
+            style="@style/ButtonsStyle"
+            android:text="Post harvest"/>
+
+    </LinearLayout>
+
+</LinearLayout>

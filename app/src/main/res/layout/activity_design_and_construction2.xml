@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutStyle"
+    tools:context=".view.DesignAndConstruction2">
+
+    <LinearLayout
+        style="@style/LayoutStyle"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/design_construction_img"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:background="#fff"
+            android:elevation="8dp"
+            android:layout_height="350dp"
+            />
+
+        <TextView
+            android:id="@+id/design_construction_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:textDirection="ltr"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/design_construction_description_tv"
+            style="@style/ArticleDescription"
+            />
+    </LinearLayout>
+
+</ScrollView>
