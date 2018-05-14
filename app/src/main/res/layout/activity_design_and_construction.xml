@@ -1,44 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/LayoutStyle"
     tools:context=".view.DesignAndConstruction">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical"
-        >
 
-        <Button
-            android:id="@+id/design_construction_btn"
-            style="@style/ButtonsStyle"
-            android:text="Design and construction" />
+    <Button
+        android:id="@+id/design_construction_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Design and construction"
+        android:background="@drawable/btna"
+        app:layout_constraintBottom_toTopOf="@+id/size_shape_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/size_shape_btn"
-            style="@style/ButtonsStyle"
-            android:text="Size and Shape" />
+    <Button
+        android:id="@+id/size_shape_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Size and Shape"
+        android:background="@drawable/btnaw"
+        app:layout_constraintBottom_toTopOf="@+id/dikes_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/dikes_btn"
-            style="@style/ButtonsStyle"
-            android:text="Dikes" />
+    <Button
+        android:id="@+id/dikes_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btna"
+        android:text="Dikes"
+        app:layout_constraintBottom_toTopOf="@+id/supply_drain_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/supply_drain_btn"
-            style="@style/ButtonsStyle"
-            android:text="Supply and drain" />
+    <Button
+        android:id="@+id/supply_drain_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Supply and drain"
+        android:background="@drawable/btnaw"
+        app:layout_constraintBottom_toTopOf="@+id/water_gate_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/water_gate_btn"
-            style="@style/ButtonsStyle"
-            android:text="Water gate " />
+    <Button
+        android:id="@+id/water_gate_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="116dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Water gate "
+        android:background="@drawable/btna"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    </LinearLayout>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

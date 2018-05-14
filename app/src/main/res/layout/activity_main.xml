@@ -11,7 +11,8 @@
         style="@style/LayoutStyle">
         <android.support.v7.widget.RecyclerView
             android:id="@+id/main_recyclerView"
-            style="@style/MiniLayoutStyle">
+            style="@style/MiniLayoutStyle"
+            >
         </android.support.v7.widget.RecyclerView>
     </FrameLayout>
 

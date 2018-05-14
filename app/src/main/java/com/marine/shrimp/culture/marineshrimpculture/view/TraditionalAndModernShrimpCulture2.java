@@ -123,7 +123,7 @@ public class TraditionalAndModernShrimpCulture2 extends AppCompatActivity implem
         }else {
             constraintLayout.setVisibility(View.VISIBLE);
         }
-
+        previousPage.setVisibility(View.INVISIBLE);
 
         nextPage.setOnClickListener(this);
         previousPage.setOnClickListener(this);

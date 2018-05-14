@@ -24,17 +24,13 @@ public class AboutUs extends AppCompatActivity {
                 "increase their awareness, guide them to the best aquaculture management, guide them How to avoid disease " +
                 "and How to deal with the diseased/infected shrimp, providing accurate information for shrimp farming technique" +
                 "this app also for students and everyone interest in this sector.";
-        aboutUs2="Radwa yehia\n" +
-                " Mariham El-Sayed\n" +
-                "Doaa sobhy\n" +
-                "Marihan Mohammed\n" +
-                "Soha Nasser\n" +
-                "Donia Hussein\n" +
-                "Kariem Abd-Elwaeth\n" +
-                "Abdelaziz Abdelbar\n" +
-                "Under Supervisor\n" +
-                " D/Ashraf Youssef El-Dakar\n" +
-                "Suez university, faculty of fish resource\n";
+        aboutUs2="•\tRadwa yehia, "+" Mariham El-Sayed\n"
+                +"•\tDoaa sobhy, "+" Marihan Mohammed\n"
+                +"•\tSoha Nasser, "+" Donia Hussein\n"
+                +"•\tKariem Abd-Elwaeth, "+" Abdelaziz Abdelbar\n\n"
+                +"•\tUnder Supervisor: \n" +
+                "\tDr/Ashraf Youssef El-Dakar, "+" Suez university,\n" +
+                "\tFaculty of Fish Resource\n";
 
         tv1.setText(aboutUs1);
         tv2.setText(aboutUs2);

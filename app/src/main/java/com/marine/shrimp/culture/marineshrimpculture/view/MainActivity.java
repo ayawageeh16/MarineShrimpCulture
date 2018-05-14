@@ -3,6 +3,8 @@ package com.marine.shrimp.culture.marineshrimpculture.view;
 import android.app.LoaderManager;
 import android.content.Intent;
 import android.content.Loader;
+import android.os.Parcelable;
+import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private RecyclerView recyclerView;
     private MainAdapter adapter;
     private List<IconModel> iconsList = new ArrayList<>();
+    private StaggeredGridLayoutManager sglm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,8 +99,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
     private void setRecyclerView (RecyclerView recyclerView){
-        StaggeredGridLayoutManager sglm =
-                new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+
+       sglm = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(sglm);
 
     }
@@ -180,10 +183,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if(id==R.id.about_us_item){
             Intent intent = new Intent(MainActivity.this, AboutUs.class);
             startActivity(intent);
+        }else if (id==R.id.sources){
+            Intent intent = new Intent(MainActivity.this, Sources.class);
+            startActivity(intent);
         }
         return false;
     }
-
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {

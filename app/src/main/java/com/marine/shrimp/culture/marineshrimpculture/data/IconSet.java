@@ -38,7 +38,7 @@ public class IconSet {
         returnedList.add(iconModel);
 
         bitmap= BitmapFactory.decodeResource(context.getResources(),R.drawable.designgx);
-        iconModel = new IconModel(5,"Design And Construction",bitmap);
+        iconModel = new IconModel(5,"Design and Construction",bitmap);
         returnedList.add(iconModel);
 
         bitmap= BitmapFactory.decodeResource(context.getResources(),R.drawable.mangementgx);
@@ -46,15 +46,15 @@ public class IconSet {
         returnedList.add(iconModel);
 
         bitmap= BitmapFactory.decodeResource(context.getResources(),R.drawable.harvestgx);
-        iconModel = new IconModel(7,"Harvest And Postharvest",bitmap);
+        iconModel = new IconModel(7,"Harvest and Postharvest",bitmap);
         returnedList.add(iconModel);
 
         bitmap= BitmapFactory.decodeResource(context.getResources(),R.drawable.diseasegx);
-        iconModel = new IconModel(8,"Diseases And Biosecurity",bitmap);
+        iconModel = new IconModel(8,"Diseases and Biosecurity",bitmap);
         returnedList.add(iconModel);
 
         bitmap= BitmapFactory.decodeResource(context.getResources(),R.drawable.traditionalandmoderngx);
-        iconModel = new IconModel(9,"Traditional And Modern Shrimp Culture",bitmap);
+        iconModel = new IconModel(9,"Traditional and Modern Shrimp Culture",bitmap);
         returnedList.add(iconModel);
 
         return returnedList;

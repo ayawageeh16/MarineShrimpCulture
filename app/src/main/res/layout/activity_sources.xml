@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Sources">
+
+    <LinearLayout
+       style="@style/MiniLayoutStyle"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:elevation="8dp">
+
+    <TextView
+        style="@style/ArticleDescription"
+        android:id="@+id/sources_description"/>
+
+    <TextView
+        style="@style/ArticleDescription"
+        android:autoLink="web"
+        android:id="@+id/sources_links"/>
+
+    </LinearLayout>
+</ScrollView>

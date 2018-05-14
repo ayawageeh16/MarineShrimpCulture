@@ -1,52 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.constraint.ConstraintLayout
+    style="@style/LayoutStyle"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/LayoutStyle"
-    tools:context=".view.ManagementPractice">
+    tools:context=".view.ManagementPractice"
+    >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="15dp">
-        <Button
-            android:id="@+id/pond_preparation_btn"
-            style="@style/ButtonsStyle"
-            android:text="Pond Preparation" />
 
-        <Button
-            android:id="@+id/seed_source_btn"
-            style="@style/ButtonsStyle"
-            android:text="Seed source" />
+    <Button
+        android:id="@+id/pond_preparation_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btna"
+        android:text="Pond Preparation"
+        app:layout_constraintBottom_toTopOf="@+id/seed_source_btn"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/seed_selection_btn"
-            style="@style/ButtonsStyle"
-            android:text="Seed selection " />
+    <Button
+        android:id="@+id/seed_source_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btnaw"
+        android:text="Seed source"
+        app:layout_constraintBottom_toTopOf="@+id/seed_selection_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/seed_count_btn"
-            style="@style/ButtonsStyle"
-            android:text="Seed count" />
+    <Button
+        android:id="@+id/seed_selection_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btna"
+        android:text="Seed selection "
+        app:layout_constraintBottom_toTopOf="@+id/seed_count_btn"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/acclimation_btn"
-            style="@style/ButtonsStyle"
-            android:text="Acclimation " />
+    <Button
+        android:id="@+id/seed_count_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btnaw"
+        android:text="Seed count"
+        app:layout_constraintBottom_toTopOf="@+id/acclimation_btn"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/stock_btn"
-            style="@style/ButtonsStyle"
-            android:text="Stock" />
+    <Button
+        android:id="@+id/acclimation_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btna"
+        android:text="Acclimation "
+        app:layout_constraintBottom_toTopOf="@+id/stock_btn"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/feeding_btn"
-            style="@style/ButtonsStyle"
-            android:text="Feeding " />
-    </LinearLayout>
+    <Button
+        android:id="@+id/stock_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btnaw"
+        android:text="Stock"
+        app:layout_constraintBottom_toTopOf="@+id/feeding_btn"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/feeding_btn"
+        style="@style/ButtonsStyle"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/btna"
+        android:text="Feeding "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

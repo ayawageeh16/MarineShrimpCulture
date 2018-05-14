@@ -134,7 +134,7 @@ public class DesginAndConstructionData {
                 " \n" +
                 "= 11.02 m\n" +
                 "Therefore, for a pond farm covering 50 hectares, width of the canal at the bedline should be 11.0 meters.\n";
-        image1 = R.drawable.supplyanddrainage1;
+        image1 = R.drawable.supplyx;
         model = new DesignAndDestructionModel(title,description,image1);
         list.add(model);
 
@@ -147,7 +147,7 @@ public class DesginAndConstructionData {
                 "b.\ta gate should be constructed in a position that water can be totally discharged;\n" +
                 "c.\ta gate should have sufficient grooves for placement of filter screens, slabs and harvest nets;\n" +
                 "d.\ta gate should be firmly placed at the pond bottom and properly linked with the dikes to prevent seepage and possible collapse.\n";
-        image1 = R.drawable.watergate1;
+        image1 = R.drawable.gatex;
         model = new DesignAndDestructionModel(title,description,image1);
         list.add(model);
 
@@ -164,7 +164,7 @@ public class DesginAndConstructionData {
                 "H\t=\ttidal level of the river or sea\n" +
                 "w\t=\twater level in the canal or pond\n" +
                 "\n";
-        image1 = R.drawable.watergate2;
+        image1 = R.drawable.gate2;
         model = new DesignAndDestructionModel(title,description,image1);
         list.add(model);
 
