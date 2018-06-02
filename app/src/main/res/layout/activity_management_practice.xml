@@ -15,7 +15,6 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/btna"
         android:text="Pond Preparation"
         app:layout_constraintBottom_toTopOf="@+id/seed_source_btn"
         app:layout_constraintStart_toStartOf="parent" />
@@ -26,7 +25,6 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/btnaw"
         android:text="Seed source"
         app:layout_constraintBottom_toTopOf="@+id/seed_selection_btn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +36,6 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/btna"
         android:text="Seed selection "
         app:layout_constraintBottom_toTopOf="@+id/seed_count_btn"
         app:layout_constraintStart_toStartOf="parent" />
@@ -49,7 +46,6 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/btnaw"
         android:text="Seed count"
         app:layout_constraintBottom_toTopOf="@+id/acclimation_btn"
         app:layout_constraintStart_toStartOf="parent" />
@@ -60,7 +56,6 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/btna"
         android:text="Acclimation "
         app:layout_constraintBottom_toTopOf="@+id/stock_btn"
         app:layout_constraintStart_toStartOf="parent" />
@@ -71,7 +66,6 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/btnaw"
         android:text="Stock"
         app:layout_constraintBottom_toTopOf="@+id/feeding_btn"
         app:layout_constraintStart_toStartOf="parent" />
@@ -82,7 +76,6 @@
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        android:background="@drawable/btna"
         android:text="Feeding "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

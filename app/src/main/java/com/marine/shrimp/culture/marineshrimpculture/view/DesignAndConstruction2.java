@@ -28,6 +28,7 @@ public class DesignAndConstruction2 extends AppCompatActivity {
         image = findViewById(R.id.design_construction_img);
         title = findViewById(R.id.design_construction_title_tv);
         description = findViewById(R.id.design_construction_description_tv);
+
         desginAndConstructionData = new DesginAndConstructionData(DesignAndConstruction2.this);
         data= desginAndConstructionData.CreateList();
 

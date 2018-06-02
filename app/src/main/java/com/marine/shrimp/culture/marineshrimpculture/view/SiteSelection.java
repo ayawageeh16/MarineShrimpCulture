@@ -15,7 +15,7 @@ import com.marine.shrimp.culture.marineshrimpculture.data.SiteSelectionModel;
 public class SiteSelection extends AppCompatActivity {
 
     private TextView description_tv, criteria_tv, waterQuality_tv, tidal_tv, soil_tv, topo_tv, vegetation_tv, sourceofseed_tv
-            ,accessibility_tv, factors_tv, source_tv;
+            ,accessibility_tv, factors_tv;
     private ImageView image;
     private SiteSelectionModel data ;
     private SiteSelectionData siteSelectionData;
@@ -35,7 +35,6 @@ public class SiteSelection extends AppCompatActivity {
         sourceofseed_tv= findViewById(R.id.site_seed_tv);
         accessibility_tv= findViewById(R.id.site_accessibility_tv);
         factors_tv= findViewById(R.id.site_factors_tv);
-        source_tv= findViewById(R.id.site_source_tv);
         image= findViewById(R.id.topic_img);
         scrollView=findViewById(R.id.site_scrollview);
 
@@ -72,7 +71,6 @@ public class SiteSelection extends AppCompatActivity {
         sourceofseed_tv.setText(data.getSourceOfSeed());
         accessibility_tv.setText(data.getAccessibilty());
         factors_tv.setText(data.getFactors());
-        source_tv.setText(data.getSource());
     }
 
     @Override

@@ -53,13 +53,12 @@ public class ManagementPracticeData {
         model = new ManagementPracticeModel(3,title,description,image1,image2,image3);
         list.add(model);
 
-        title ="Shrimp Seeds source \n" +
-                "from captures\n";
-        description ="small shrimp (post larvae) for stocking ponds can be captured from the wild. \n" +
+        title ="Shrimp Seeds source \n";
+        description ="1-small shrimp (post larvae) for stocking ponds can be captured from the wild. \n" +
                 "Small mesh push nets are used in the shallow estuaries to capture post larvae. \n" +
                 "Post larvae captured in the wild often have both desirable and undesirable shrimp species along with small predacious fishes. \n" +
-                "Difficult to separate desirable and undesirable shrimp PLs\n" +
-                "Shrimp post larvae from hatcheries\n" +
+                "Difficult to separate desirable and undesirable shrimp PLs\n\n" +
+                "2-Shrimp post larvae from hatcheries\n" +
                 "(from captivity).\n" +
                 "Numerous larval stages are passed before reaching the post larval stage.\n" +
                 "Natural food (phytoplankton) must be provided to the larval stages grown in the hatchery.\n" +

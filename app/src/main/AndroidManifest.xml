@@ -88,7 +88,11 @@
         <activity
             android:name=".view.Sources"
             android:label="@string/Sources"
-            android:parentActivityName=".view.MainActivity"></activity>
+            android:parentActivityName=".view.MainActivity" />
+        <activity android:name=".view.SettingsActivity"
+            android:label="@string/Settings"
+            android:parentActivityName=".view.MainActivity"
+            />
     </application>
 
 </manifest>

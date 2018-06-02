@@ -186,6 +186,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }else if (id==R.id.sources){
             Intent intent = new Intent(MainActivity.this, Sources.class);
             startActivity(intent);
+        }else if (id==R.id.settings){
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
         }
         return false;
     }

@@ -325,13 +325,17 @@ public class DiseasesAndViralDiseaseData {
         model= new DiseasesAndViralDiseaseModel(title,summary,title1,description1,title2,description2,title3,description3,image);
         list.add(model);
 
-        title="DURING disease outbreak";
-        summary="•\t Do not drain contaminated pond water\n" +
-                "•\t Report immediately the disease outbreak\n" +
-                "•\t When proven to be infected by WSSV or other Shrimp viral diseases, eradicate hosts (shrimp Stock and other crustaceans) mechanically and hold rearing water for at least a week.\n" +
-                "•\t Sell the shrimp if big enough, but gather the crustaceans and burn\n" +
-                "•\t Bear in mind though that any uncooked, infected shrimp or its washings are potential sources of the virus\n" +
-                "•\t Ideally, crustacides treatment should be applied to affected ponds before disinfection and release of water\n";
+        title="Before disease hits your farm";
+        summary="1.\tObserve GMP or good management practices\n" +
+                "2.\tProvide settling and treatment pond\n" +
+                "3.\tProvide reservoir with fish (tilapia is popular)\n" +
+                "4.\tUse good quality fry (or WSSV-negative fry as certified by a disease diagnostic lab)\n" +
+                "5.\tInstall biosecurity measures such as: -\n" +
+                "Tire bath at the farm entrance\n" +
+                "Footbath and hand disinfection at the pond entrance\n" +
+                "Nets and high-density polyethylene liners as crab fence\n" +
+                "Bird scaring device\n" +
+                "Individual paraphernalia (feeding trays and boat, secchi disc, refractometer, basins, sampling materials) for each pond\n";
         title1= "";
         description1="";
         description2="";

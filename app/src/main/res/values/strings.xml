@@ -36,4 +36,10 @@
     <string name="diseases_and_biosecurity">Diseases and biosecurity</string>
     <string name="traditional_modern">Traditional and modern shrimp culture</string>
     <string name="Sources">Sources</string>
+    <string name="setting_location_title">Location</string>
+    <string name="setting_Temperature_title">Temperature Unit</string>
+    <string name="setting_Notification_title">Notifications</string>
+    <string name="Settings">Settings</string>
+    <string name="Language">Language</string>
+
 </resources>

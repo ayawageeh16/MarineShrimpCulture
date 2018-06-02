@@ -14,7 +14,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:text="Design and construction"
-        android:background="@drawable/btna"
         app:layout_constraintBottom_toTopOf="@+id/size_shape_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -26,7 +25,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:text="Size and Shape"
-        android:background="@drawable/btnaw"
         app:layout_constraintBottom_toTopOf="@+id/dikes_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -37,7 +35,6 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/btna"
         android:text="Dikes"
         app:layout_constraintBottom_toTopOf="@+id/supply_drain_btn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +47,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:text="Supply and drain"
-        android:background="@drawable/btnaw"
         app:layout_constraintBottom_toTopOf="@+id/water_gate_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -62,7 +58,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:text="Water gate "
-        android:background="@drawable/btna"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

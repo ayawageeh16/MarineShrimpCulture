@@ -103,12 +103,6 @@
             android:text="@string/site_source"
             />
 
-        <TextView
-            android:id="@+id/site_source_tv"
-            style="@style/ArticleDescription"
-            android:autoLink="web"
-            />
-
     </LinearLayout>
 
 </ScrollView>

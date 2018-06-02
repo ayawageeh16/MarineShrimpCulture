@@ -14,7 +14,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:text="Bacterial"
-        android:background="@drawable/btna"
         app:layout_constraintBottom_toTopOf="@+id/viral_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +27,6 @@
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         android:text="Viral disease"
-        android:background="@drawable/btnaw"
         app:layout_constraintBottom_toTopOf="@+id/biosecurity_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -40,7 +38,6 @@
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         android:text="Biosecurity"
-        android:background="@drawable/btna"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

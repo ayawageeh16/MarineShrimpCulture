@@ -33,8 +33,9 @@ public class WaterQuality extends AppCompatActivity implements View.OnClickListe
     private ScrollView scrollView;
     private ArrayList<WaterQualityModel> data = new ArrayList<>();
     private WaterQualityData waterQualityData ;
-    private int positionCounter = 0, numberOfImages = 0, imageCounter = 1, listSize;
+    private int    positionCounter = 0, imageCounter = 1,numberOfImages = 0, listSize;
     private LruCache bitmapCache ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,9 @@ public class WaterQuality extends AppCompatActivity implements View.OnClickListe
         waterQualityData = new WaterQualityData(this);
         data = waterQualityData.createList();
         listSize = data.size();
+
+
+
 
         final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
         // Use 1/8th of the available memory for this memory cache.
@@ -128,7 +132,8 @@ public class WaterQuality extends AppCompatActivity implements View.OnClickListe
         else if (view== previousButton){
             imageNext.setVisibility(View.VISIBLE);
             if (positionCounter > 0){
-                if(positionCounter==1){
+
+                if(positionCounter ==1){
                     previousButton.setVisibility(View.INVISIBLE);
                     nextButton.setVisibility(View.VISIBLE);
                 }

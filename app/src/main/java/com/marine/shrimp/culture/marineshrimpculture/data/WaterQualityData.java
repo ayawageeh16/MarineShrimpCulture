@@ -114,10 +114,7 @@ public class WaterQualityData {
 
         title ="Crisis management";
         description="Effects of various abiotic factors on shrimp farming and their remedial measures are summarized in the following- Tables\n" +
-                "\n" +
-                "Includes :\n\n" +
-                "Chemical factors \n" +
-                "Gaseous factors \n";
+                "\n";
         image1 = R.drawable.crisismanagement;
         numberOfImages=1;
         model= new WaterQualityModel(title,description,image1,0,0,numberOfImages);
