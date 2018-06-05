@@ -87,6 +87,7 @@ public class WeatherActivity extends AppCompatActivity {
     SavedWeatherModel savedWeatherModel;
     EditWidgetListener listener;
 
+
     public interface EditWidgetListener {
         void updateResult(TempModel model);
     }
@@ -357,12 +358,10 @@ public class WeatherActivity extends AppCompatActivity {
         if (check == true) {
             deleteWeather(weatherModel.getWeather().get(0).getId());
             saveWeather.setImageResource(R.drawable.ic_save);
-            Toast.makeText(this, "removed from your favourites", Toast.LENGTH_LONG).show();
         } else {
             Uri uri = getContentResolver().insert(WeatherContract.WeatherEntry.CONTENT_URI, values);
             if (uri != null) {
                 saveWeather.setImageResource(R.drawable.ic_saveclicked);
-                Toast.makeText(this, weatherModel.getName()+ " is added to your favourites", Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(this, "failed", Toast.LENGTH_LONG).show();
             }}}
