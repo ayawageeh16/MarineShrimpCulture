@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/LayoutStyle"
     tools:context=".view.SiteSelection"
@@ -18,7 +17,7 @@
             android:scaleType="fitXY"
             android:elevation="8dp"
             android:background="#fff"
-            />
+            android:contentDescription="TODO" />
         <TextView
             android:id="@+id/site_description_tv"
             style="@style/ArticleDescription"

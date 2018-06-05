@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="false"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".view.MainActivity">
             <intent-filter>
@@ -122,6 +122,7 @@
         <receiver android:name=".view.WeatherAppWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.marine.shrimp.culture.marineshrimpculture.TEXT_CHANGED" />
             </intent-filter>
 
             <meta-data

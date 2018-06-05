@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/LayoutStyle"
     tools:context=".view.BioSecurity"
@@ -16,7 +15,8 @@
             android:layout_height="300dp"
             android:scaleType="fitXY"
             android:background="#fff"
-            android:elevation="8dp"/>
+            android:elevation="8dp"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/biosecurity_title_tv"
@@ -50,7 +50,7 @@
                 android:layout_marginBottom="5dp"
                 android:src="@drawable/ic_left_arrow"
                 android:background="@android:color/transparent"
-                android:text="previous"
+                android:contentDescription="@string/previous"
                 android:layout_weight="1"/>
 
             <ImageButton
@@ -60,7 +60,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_right_arrow"
-                android:text="Next"
+                android:contentDescription="@string/next"
                 android:layout_gravity="left"
                 android:layout_weight="1"/>
         </LinearLayout>

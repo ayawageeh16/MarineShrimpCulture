@@ -1,13 +1,13 @@
 package com.marine.shrimp.culture.marineshrimpculture.view;
 
 import android.Manifest;
+import android.appwidget.AppWidgetManager;
+import android.content.ComponentName;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 
 import com.google.android.gms.location.LocationCallback;
 
@@ -17,14 +17,12 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Looper;
-import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -47,23 +45,22 @@ import com.google.android.gms.location.SettingsClient;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.marine.shrimp.culture.marineshrimpculture.R;
-import com.marine.shrimp.culture.marineshrimpculture.utils.WeatherDataInterface;
 import com.marine.shrimp.culture.marineshrimpculture.utils.WeatherUtils;
-import com.marine.shrimp.culture.marineshrimpculture.weatherData.SavedWeatherModel;
 import com.marine.shrimp.culture.marineshrimpculture.weatherData.TempModel;
-import com.marine.shrimp.culture.marineshrimpculture.weatherData.WeatherContentProvider;
 import com.marine.shrimp.culture.marineshrimpculture.weatherData.WeatherContract;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import static android.app.PendingIntent.getActivity;
 import static com.google.android.gms.location.LocationServices.getFusedLocationProviderClient;
 
 public class WeatherActivity extends AppCompatActivity {
 
     private final static StringBuilder API = new StringBuilder("&appid=a672aedf129676161fc4d392a8877853&units=Metric");
     private final static StringBuilder MAINAPI = new StringBuilder("http://api.openweathermap.org/data/2.5/weather?");
+    public static final String EXTRA_WEATHER = "weather";
 
     LocationManager locationManager;
     double longitude, latitude;
@@ -84,13 +81,9 @@ public class WeatherActivity extends AppCompatActivity {
     TextView date, time, description, temp_max, temp_min, humidity, sea_level, grnd_level, wind_speed, wind_degree, wind, pressure;
     ImageView icon;
     ImageButton saveWeather;
-    SavedWeatherModel savedWeatherModel;
-    EditWidgetListener listener;
+    TempModel myTempModel;
 
 
-    public interface EditWidgetListener {
-        void updateResult(TempModel model);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,14 +106,11 @@ public class WeatherActivity extends AppCompatActivity {
         icon = findViewById(R.id.weather_icon);
         saveWeather = findViewById(R.id.save_weather);
 
-        Intent i = getIntent();
-        savedWeatherModel =i.getParcelableExtra("weather");
+        Bundle bundle = getIntent().getExtras();
+        if(bundle != null && bundle.containsKey(EXTRA_WEATHER)) {
+            myTempModel = bundle.getParcelable(EXTRA_WEATHER);
+        }
 
-        if (savedWeatherModel != null){
-            getCurrentTime();
-            getDate();
-            setView(savedWeatherModel,currentDate,currentTime);
-        }else  {
             weatherUtils = new WeatherUtils();
             startLocationUpdates();
             GsonBuilder gsonBuilder = new GsonBuilder();
@@ -141,7 +131,6 @@ public class WeatherActivity extends AppCompatActivity {
                         });
                 snackbar.show();
             }
-        }
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -155,6 +144,13 @@ public class WeatherActivity extends AppCompatActivity {
                 startActivity(sendIntent);
             }
         });
+
+        // Set selected recipe is the one which will be displayed in the
+        // app widget.
+        AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(WeatherActivity.this);
+        int[] appWidgetIDs = appWidgetManager.getAppWidgetIds(new ComponentName(WeatherActivity.this, WeatherAppWidget.class));
+        WeatherAppWidget.tempModel = myTempModel;
+        WeatherAppWidget.updateWeathersWidget(WeatherActivity.this, appWidgetManager, appWidgetIDs);
 
     }
 
@@ -193,12 +189,16 @@ public class WeatherActivity extends AppCompatActivity {
         @Override
         public void onResponse(String response) {
 
-            final TempModel tempModel = gson.fromJson(response, TempModel.class);
-            if (tempModel != null) {
+             myTempModel = gson.fromJson(response, TempModel.class);
+            if (myTempModel != null) {
                 getCurrentTime();
                 getDate();
-                setView(tempModel, currentDate, currentTime);
-               // listener.updateResult(tempModel);
+                setView(myTempModel, currentDate, currentTime);
+                AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(WeatherActivity.this);
+                int[] appWidgetIDs = appWidgetManager.getAppWidgetIds(new ComponentName(WeatherActivity.this, WeatherAppWidget.class));
+                WeatherAppWidget.tempModel = myTempModel;
+                WeatherAppWidget.updateWeathersWidget(WeatherActivity.this, appWidgetManager, appWidgetIDs);
+               // listener.updateResult(myTempModel);
             } else {
                 Toast.makeText(WeatherActivity.this, "null", Toast.LENGTH_LONG).show();
             }
@@ -216,71 +216,31 @@ public class WeatherActivity extends AppCompatActivity {
         }
         date.setText(currentDate);
         time.setText(currentTime);
-        temp_max.setText(String.valueOf(tempModel.getMain().getTempMax()) +"°");
-        temp_min.setText(String.valueOf(tempModel.getMain().getTempMin()) +"°");
+        temp_max.setText(String.valueOf(tempModel.getMain().getTempMax()) +getString(R.string.temp_degree));
+        temp_min.setText(String.valueOf(tempModel.getMain().getTempMin()) +getString(R.string.temp_degree));
         description.setText(tempModel.getWeather().get(0).getDescription());
-        humidity.setText("Humidity: \t"+ String.valueOf(tempModel.getMain().getHumidity()));
+        humidity.setText(getString(R.string.humidity)+ String.valueOf(tempModel.getMain().getHumidity()));
         if (String.valueOf(tempModel.getMain().getSeaLevel()).equals(null)) {
-            sea_level.setText("Sea level: \t"+ " Not Predicted! ");
+            sea_level.setText(getString(R.string.sea_level)+ getString(R.string.not_predicted));
         } else {
-            sea_level.setText("Sea level: \t"+ String.valueOf(tempModel.getMain().getSeaLevel()));
+            sea_level.setText(getString(R.string.sea_level)+ String.valueOf(tempModel.getMain().getSeaLevel()));
         }
 
         if (String.valueOf(tempModel.getMain().getGrndLevel()).equals(null)) {
-            grnd_level.setText("Grnd level: \t"+ R.string.not_predicted);
+            grnd_level.setText(getString(R.string.grnd_level)+getString(R.string.not_predicted));
         } else {
-            grnd_level.setText("Grnd level: \t"+ String.valueOf(tempModel.getMain().getGrndLevel()));
+            grnd_level.setText(getString(R.string.grnd_level)+ String.valueOf(tempModel.getMain().getGrndLevel()));
         }
-        wind_speed.setText("Wind speed: \t"+ String.valueOf(tempModel.getWind().getSpeed()));
-        wind_degree.setText("Wind degree: \t"+ String.valueOf(tempModel.getWind().getDeg()));
-        wind.setText("Wind: \t" + String.valueOf(WeatherUtils.getFormattedWind(this, tempModel.getWind().getSpeed(), tempModel.getWind().getDeg())));
-        pressure.setText("Pressure: \t"+ String.valueOf(tempModel.getMain().getPressure()));
-        //Bitmap img = BitmapFactory.decodeResource(getResources(), WeatherUtils.getResourceIdForWeatherCondition(tempModel.getId()));
+        wind_speed.setText(getString(R.string.wind_speed)+ String.valueOf(tempModel.getWind().getSpeed()));
+        wind_degree.setText(getString(R.string.wind_degree)+ String.valueOf(tempModel.getWind().getDeg()));
+        wind.setText(getString(R.string.wind) + String.valueOf(WeatherUtils.getFormattedWind(this, tempModel.getWind().getSpeed(), tempModel.getWind().getDeg())));
+        pressure.setText(getString(R.string.pressure)+ String.valueOf(tempModel.getMain().getPressure()));
+        //Bitmap img = BitmapFactory.decodeResource(getResources(), WeatherUtils.getResourceIdForWeatherCondition(myTempModel.getId()));
         String iconCode = tempModel.getWeather().get(0).getIcon();
-        StringBuilder iconUri = new StringBuilder("http://openweathermap.org/img/w/");
-        iconUri.append(iconCode);
-        iconUri.append(".png");
+        String iconUri = "http://openweathermap.org/img/w/" + iconCode +
+                ".png";
         Glide.with(this)
-                .load(iconUri.toString())
-                .into(icon);
-    }
-
-    private void setView(SavedWeatherModel savedWeatherModel, String currentDate, String currentTime) {
-
-        boolean check = checkIfExists((int) savedWeatherModel.getId());
-        if (check == true) {
-            saveWeather.setImageResource(R.drawable.ic_saveclicked);
-        } else {
-            saveWeather.setImageResource(R.drawable.ic_save);
-        }
-        date.setText(currentDate);
-        time.setText(currentTime);
-        temp_max.setText(String.valueOf(savedWeatherModel.getWeatherTempMax()));
-        temp_min.setText(String.valueOf(savedWeatherModel.getWeatherTempMin()));
-        description.setText(savedWeatherModel.getWeatherDescription());
-        humidity.setText(savedWeatherModel.getWeatherHumidity());
-        if (savedWeatherModel.getWeatherSeaLevel().equals(null)) {
-            sea_level.setText("Sea level: \t"+ " Not Predicted! ");
-        } else {
-            sea_level.setText("Sea level: \t"+ savedWeatherModel.getWeatherSeaLevel());
-        }
-
-        if (savedWeatherModel.getWeatherGrndLevel().equals(null)) {
-            grnd_level.setText("Grnd level: \t"+ R.string.not_predicted);
-        } else {
-            grnd_level.setText("Grnd level: \t"+ savedWeatherModel.getWeatherGrndLevel());
-        }
-        wind_speed.setText("Wind speed: \t"+ savedWeatherModel.getWeatherWindSpeed());
-        wind_degree.setText("Wind degree: \t"+ savedWeatherModel.getWeatherWindDegree());
-       // wind.setText("Wind: \t" + String.valueOf(WeatherUtils.getFormattedWind(this, tempModel.getWind().getSpeed(), tempModel.getWind().getDeg())));
-        pressure.setText("Pressure: \t"+ savedWeatherModel.getWeatherPressure());
-        //Bitmap img = BitmapFactory.decodeResource(getResources(), WeatherUtils.getResourceIdForWeatherCondition(tempModel.getId()));
-        String iconCode = savedWeatherModel.getWeatherIcon();
-        StringBuilder iconUri = new StringBuilder("http://openweathermap.org/img/w/");
-        iconUri.append(iconCode);
-        iconUri.append(".png");
-        Glide.with(this)
-                .load(iconUri.toString())
+                .load(iconUri)
                 .into(icon);
     }
 
@@ -341,8 +301,8 @@ public class WeatherActivity extends AppCompatActivity {
 
         ContentValues values = new ContentValues();
         values.put(WeatherContract.WeatherEntry.COLUMN_WEATHER_ID, weatherModel.getWeather().get(0).getId() );
-        values.put(WeatherContract.WeatherEntry.COLUMN_WEATHER_DATE, currentDate.toString());
-        values.put(WeatherContract.WeatherEntry.COLUMN_WEATHER_TIME, currentTime.toString());
+        values.put(WeatherContract.WeatherEntry.COLUMN_WEATHER_DATE, currentDate);
+        values.put(WeatherContract.WeatherEntry.COLUMN_WEATHER_TIME, currentTime);
         values.put(WeatherContract.WeatherEntry.COLUMN_WEATHER_DESCRIPTION, weatherModel.getWeather().get(0).getDescription());
         values.put(WeatherContract.WeatherEntry.COLUMN_WEATHER_ICON, weatherModel.getWeather().get(0).getIcon());
         values.put(WeatherContract.WeatherEntry.COLUMN_WEATHER_PRESSURE, weatherModel.getMain().getPressure());
@@ -363,7 +323,7 @@ public class WeatherActivity extends AppCompatActivity {
             if (uri != null) {
                 saveWeather.setImageResource(R.drawable.ic_saveclicked);
             } else {
-                Toast.makeText(this, "failed", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getString(R.string.failed), Toast.LENGTH_LONG).show();
             }}}
 
 

@@ -19,7 +19,8 @@
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:srcCompat="@drawable/light_clouds" />
+        app:srcCompat="@drawable/light_clouds"
+        android:contentDescription="TODO" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -33,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="15dp"
+            android:textStyle="bold"
             tools:text="date" />
 
         <TextView
@@ -41,7 +43,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:textStyle="bold"
             tools:text="time" />
+
+
+        <TextView
+            android:id="@+id/description_saved"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>

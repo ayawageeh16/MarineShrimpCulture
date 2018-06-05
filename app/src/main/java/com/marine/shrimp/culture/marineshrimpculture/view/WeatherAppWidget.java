@@ -5,51 +5,101 @@ import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.TaskStackBuilder;
 import android.util.Log;
 import android.widget.RemoteViews;
 
 import com.marine.shrimp.culture.marineshrimpculture.R;
-import com.marine.shrimp.culture.marineshrimpculture.utils.WeatherDataInterface;
 import com.marine.shrimp.culture.marineshrimpculture.utils.WeatherWidgetService;
 import com.marine.shrimp.culture.marineshrimpculture.view.WeatherActivity;
+import com.marine.shrimp.culture.marineshrimpculture.weatherData.MainTempModel;
 import com.marine.shrimp.culture.marineshrimpculture.weatherData.TempModel;
 
-public class WeatherAppWidget extends AppWidgetProvider implements WeatherActivity.EditWidgetListener{
+public class WeatherAppWidget extends AppWidgetProvider {
 
-    TempModel model;
+    public static TempModel tempModel;
+    public static final String ACTION_TEXT_CHANGED = "com.marine.shrimp.culture.marineshrimpculture.TEXT_CHANGED";
+    public static String s;
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
-                                TempModel model, int appWidgetId) {
+                               int appWidgetId) {
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.weather_app_widget);
 
-        views.setTextViewText(R.id.description_widget, model.getWeather().get(0).getDescription());
-        views.setTextViewText(R.id.temp_max_widget, String.valueOf(model.getMain().getTempMax()));
-        views.setTextViewText(R.id.temp_min_widget, String.valueOf(model.getMain().getTempMin()));
-        //views.setBitmap(R.id.image_widget,R.drawable.storm);
-        Log.d("HEY HEY HEY WIDGET",model.toString());
+        if( tempModel != null) {
 
-        Intent intent = new Intent(context, WeatherActivity.class);
-        PendingIntent pendingIntent= PendingIntent.getActivity(context,0,intent,0);
-        views.setOnClickPendingIntent(R.id.image_widget,pendingIntent);
+            MainTempModel mainTempModel = tempModel.getMain();
+            StringBuilder sMainTemp = new StringBuilder();
+
+            sMainTemp.append("min: ")
+                    .append(mainTempModel.getTempMin())
+                    .append("\n")
+                    .append("max: ")
+                    .append(mainTempModel.getTempMax())
+                    .append("\n")
+                    .append("pressure: ")
+                    .append(mainTempModel.getPressure())
+                    .append("\n")
+                    .append("sea level: ")
+                    .append(mainTempModel.getSeaLevel())
+                    .append("\n")
+                    .append("grnd_level: ")
+                    .append(mainTempModel.getGrndLevel())
+                    .append("\n")
+                    .append("humidity: ")
+                    .append(mainTempModel.getHumidity());
+
+            views.setTextViewText(R.id.description_widget, sMainTemp);
+
+
+            // Handle click to open the selected recipe in activity
+            Intent intent = new Intent(context, WeatherActivity.class);
+            intent.putExtra(WeatherActivity.EXTRA_WEATHER, tempModel);
+            PendingIntent pendingIntent = TaskStackBuilder.create(context)
+                    .addNextIntentWithParentStack(intent)
+                    .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+            PendingIntent.getActivity(context, 0, intent, 0);
+
+            views.setOnClickPendingIntent(R.id.root_layout, pendingIntent);
+        }
 
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
+
+    }
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        super.onReceive(context, intent);
+        if (intent.getAction().equals(ACTION_TEXT_CHANGED)) {
+            // handle intent here
+            s = intent.getStringExtra("NewString");
+        }
     }
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         // There may be multiple widgets active, so update all of them
-        WeatherWidgetService.startActionUpdateWidget(context);
+       // WeatherWidgetService.startActionUpdateWidget(context);
+        for (int appWidgetId : appWidgetIds) {
+            updateAppWidget(context, appWidgetManager, appWidgetId);
+        }
     }
 
-    public static void updatePlantWidgets(Context context, AppWidgetManager appWidgetManager,
+    public static void updateWeathersWidget(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        for (int appWidgetId : appWidgetIds) {
+            updateAppWidget(context, appWidgetManager, appWidgetId);
+        }
+    }
+
+   /* public static void updatePlantWidgets(Context context, AppWidgetManager appWidgetManager,
                                           TempModel model, int[] appWidgetIds) {
         for (int appWidgetId : appWidgetIds) {
             updateAppWidget(context, appWidgetManager, model, appWidgetId);
             Log.d("HEY HEY HEY WIDGET",model.toString());
         }
-    }
+    }*/
+
     @Override
     public void onEnabled(Context context) {
         // Enter relevant functionality for when the first widget is created
@@ -60,9 +110,5 @@ public class WeatherAppWidget extends AppWidgetProvider implements WeatherActivi
         // Enter relevant functionality for when the last widget is disabled
     }
 
-    @Override
-    public void updateResult(TempModel model) {
-        this.model = model;
-    }
 }
 

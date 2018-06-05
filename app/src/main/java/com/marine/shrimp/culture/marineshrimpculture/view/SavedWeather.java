@@ -1,7 +1,6 @@
 package com.marine.shrimp.culture.marineshrimpculture.view;
 
 import android.app.LoaderManager;
-import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
@@ -15,7 +14,6 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import com.marine.shrimp.culture.marineshrimpculture.R;
 import com.marine.shrimp.culture.marineshrimpculture.adapter.WeatherAdapter;
 import com.marine.shrimp.culture.marineshrimpculture.utils.WeatherLoader;
-import com.marine.shrimp.culture.marineshrimpculture.weatherData.SavedWeatherModel;
 import com.marine.shrimp.culture.marineshrimpculture.weatherData.WeatherContract;
 
 import static android.widget.LinearLayout.VERTICAL;
@@ -56,14 +54,7 @@ public class SavedWeather extends AppCompatActivity {
 
         @Override
         public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
-            adapter= new WeatherAdapter(cursor, new WeatherAdapter.OnItemClickedListener() {
-                @Override
-                public void onItemClicked(SavedWeatherModel weather) {
-                    Intent intent = new Intent(SavedWeather.this,WeatherActivity.class);
-                    intent.putExtra("weather", weather);
-                    startActivity(intent);
-                }
-            });
+            adapter= new WeatherAdapter(cursor, SavedWeather.this);
             recyclerView.setAdapter(adapter);
         }
 

@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,11 +20,9 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
    int position;
    Context context;
    Cursor cursor;
-   OnItemClickedListener listener ;
-
-   public WeatherAdapter(Cursor cursor, OnItemClickedListener listener){
+   public WeatherAdapter(Cursor cursor,Context context){
     this.cursor =cursor;
-    this.listener =listener;
+       this.context=context;
    }
    public WeatherAdapter(Context context){
     this.context=context;
@@ -55,13 +52,9 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
     return  cursor.getCount();
     }
 
-    public interface OnItemClickedListener{
-     void onItemClicked (SavedWeatherModel movie);
-   }
-
   public class WeatherViewHolder extends RecyclerView.ViewHolder{
 
-   TextView savedTime, savedDate;
+   TextView savedTime, savedDate, description;
    ImageView icon;
 
    public WeatherViewHolder(View itemView) {
@@ -69,6 +62,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
     savedTime = itemView.findViewById(R.id.saved_time);
     savedDate = itemView.findViewById(R.id.saved_date);
     icon= itemView.findViewById(R.id.saved_icon);
+    description=itemView.findViewById(R.id.description_saved);
    }
 
    public void Bind(final Cursor cursor){
@@ -88,20 +82,14 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
 
     final SavedWeatherModel weather =new SavedWeatherModel(weatherId,weatherDate,weatherTime,weatherDescription,weatherIcon,
             weatherPressure,weatherHumidity,weatherTempMax,weatherTempMin,weatherSeaLevel,weatherGrndLevel,weatherWindSpeed,weatherWindDegree);
-    StringBuilder iconUri = new StringBuilder("http://openweathermap.org/img/w/");
-    iconUri.append(weatherIcon);
-    iconUri.append(".png");
-    Glide.with(icon.getContext())
-            .load(iconUri.toString())
+       String iconUri = "http://openweathermap.org/img/w/" + weatherIcon +
+               ".png";
+       Glide.with(icon.getContext())
+            .load(iconUri)
             .into(icon);
     savedDate.setText(weatherDate);
     savedTime.setText(weatherTime);
-    itemView.setOnClickListener(new View.OnClickListener() {
-     @Override
-     public void onClick(View view) {
-      listener.onItemClicked(weather);
-     }
-    });
+    description.setText(weatherDescription);
    }
   }
 }

@@ -3,7 +3,6 @@ package com.marine.shrimp.culture.marineshrimpculture.utils;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 

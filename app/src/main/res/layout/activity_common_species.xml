@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/LayoutStyle"
     tools:context=".view.CommonSpecies"
@@ -17,7 +16,8 @@
             android:src="@mipmap/ic_launcher"
             android:scaleType="fitXY"
             android:background="#fff"
-            android:elevation="8dp"/>
+            android:elevation="8dp"
+            android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/common_title_tv"
@@ -132,7 +132,7 @@
                 android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:src="@drawable/ic_left_arrow"
-                android:text="Previous" />
+                android:contentDescription="@string/previous" />
 
 
             <ImageButton
@@ -143,7 +143,7 @@
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_right_arrow"
                 android:onClick="goToNext"
-                android:text="Next" />
+                android:contentDescription="@string/next" />
 
         </LinearLayout>
     </LinearLayout>

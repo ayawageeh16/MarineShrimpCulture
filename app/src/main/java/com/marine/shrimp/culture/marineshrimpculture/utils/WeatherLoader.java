@@ -6,10 +6,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.util.Log;
 
-import com.marine.shrimp.culture.marineshrimpculture.data.IconModel;
 import com.marine.shrimp.culture.marineshrimpculture.weatherData.WeatherContract;
-
-import java.util.List;
 
 public class WeatherLoader extends AsyncTaskLoader<Cursor> {
 

@@ -56,6 +56,7 @@
     <string name="no_internet_connection">"No internet connection"</string>
     <string name="Retry">"Retry"</string>
     <string name="app_hashtag">"#marineshrimpculture"</string>
+    <string name="failed">failed</string>
 
 
     <!--Used in overflow menu to refresh weather data-->
@@ -117,5 +118,29 @@
     <string name="SavedWeather">SavedWeather</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+    <string name="next">next</string>
+    <string name="previous">previous</string>
+    <string name="save">saveweather</string>
+    <string name="modern">Modern</string>
+    <string name="traditional">Traditional</string>
+    <string name="bacterial">Bacterial</string>
+    <string name="viral_disease">Viral disease</string>
+    <string name="biosecurity">Biosecurity</string>
+    <string name="harvest">Harvest</string>
+    <string name="methods_of_harvesting">Methods of harvesting</string>
+    <string name="be_careful">Be careful</string>
+    <string name="post_harvest">Post harvest</string>
+    <string name="pond_preparation">Pond Preparation</string>
+    <string name="seed_source">Seed source</string>
+    <string name="seed_selection">Seed selection</string>
+    <string name="seed_count">Seed count</string>
+    <string name="acclimation">Acclimation</string>
+    <string name="stock">Stock</string>
+    <string name="feeding">Feeding</string>
+    <string name="design_and_construction">Design and construction</string>
+    <string name="size_and_shape">Size and Shape</string>
+    <string name="dikes">Dikes</string>
+    <string name="supply_and_drain">Supply and drain</string>
+    <string name="water_gate">Water gate</string>
 
 </resources>

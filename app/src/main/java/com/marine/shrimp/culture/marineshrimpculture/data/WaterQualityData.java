@@ -1,7 +1,6 @@
 package com.marine.shrimp.culture.marineshrimpculture.data;
 
 import android.content.Context;
-import android.os.Parcel;
 
 import com.marine.shrimp.culture.marineshrimpculture.R;
 

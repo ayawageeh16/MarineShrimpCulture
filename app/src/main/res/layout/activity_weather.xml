@@ -61,7 +61,8 @@
             app:layout_constraintEnd_toStartOf="@+id/temp_max_tv"
             app:layout_constraintHorizontal_bias="0.047"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weather_date" />
+            app:layout_constraintTop_toBottomOf="@+id/weather_date"
+            android:contentDescription="TODO" />
 
 
         <TextView
@@ -118,6 +119,7 @@
             android:background="#fff"
             android:onClick="saveWeather"
             android:src="@drawable/ic_save"
+            android:contentDescription="@string/save"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/temp_min_tv"

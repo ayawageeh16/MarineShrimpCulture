@@ -18,7 +18,7 @@
             android:layout_height="300dp"
             android:background="#fff"
             android:elevation="8dp"
-            />
+            android:contentDescription="TODO" />
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/image_buttons"
@@ -36,7 +36,7 @@
                 android:layout_marginTop="8dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_left_chevron"
-                android:text="previous"
+                android:contentDescription="@string/previous"
                 android:visibility="invisible"
                 android:background="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +55,7 @@
                 android:layout_marginTop="8dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_right_chevron"
-                android:text="Next"
+                android:contentDescription="@string/next"
                 android:background="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -169,7 +169,7 @@
                 android:layout_marginBottom="5dp"
                 android:src="@drawable/ic_left_arrow"
                 android:background="@android:color/transparent"
-                android:text="previous"
+                android:contentDescription="@string/previous"
                 android:layout_weight="1"/>
 
             <ImageButton
@@ -179,7 +179,7 @@
                 android:layout_marginBottom="5dp"
                 android:src="@drawable/ic_right_arrow"
                 android:background="@android:color/transparent"
-                android:text="Next"
+                android:contentDescription="@string/next"
                 android:layout_gravity="left"
                 android:layout_weight="1"/>
         </LinearLayout>

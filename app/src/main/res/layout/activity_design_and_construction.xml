@@ -13,7 +13,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Design and construction"
+        android:text="@string/design_and_construction"
         app:layout_constraintBottom_toTopOf="@+id/size_shape_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -24,7 +24,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Size and Shape"
+        android:text="@string/size_and_shape"
         app:layout_constraintBottom_toTopOf="@+id/dikes_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -35,7 +35,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Dikes"
+        android:text="@string/dikes"
         app:layout_constraintBottom_toTopOf="@+id/supply_drain_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -46,7 +46,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Supply and drain"
+        android:text="@string/supply_and_drain"
         app:layout_constraintBottom_toTopOf="@+id/water_gate_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -57,7 +57,7 @@
         android:layout_marginBottom="116dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Water gate "
+        android:text="@string/water_gate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

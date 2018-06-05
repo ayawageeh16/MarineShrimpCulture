@@ -75,7 +75,6 @@ public class WeatherContentProvider extends ContentProvider {
     public String getType(@NonNull Uri uri) {
         return null;
     }
-
     @Nullable
     @Override
     public Uri insert(@NonNull Uri uri, @Nullable ContentValues contentValues) {

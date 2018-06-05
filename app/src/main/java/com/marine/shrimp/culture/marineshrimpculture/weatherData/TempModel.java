@@ -1,11 +1,14 @@
 package com.marine.shrimp.culture.marineshrimpculture.weatherData;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class TempModel {
+public class TempModel  implements Parcelable{
 
     @SerializedName("coord")
     @Expose
@@ -56,6 +59,38 @@ public class TempModel {
         this.cod = cod;
     }
 
+    protected TempModel(Parcel in) {
+        base = in.readString();
+        if (in.readByte() == 0) {
+            dt = null;
+        } else {
+            dt = in.readInt();
+        }
+        if (in.readByte() == 0) {
+            id = null;
+        } else {
+            id = in.readInt();
+        }
+        name = in.readString();
+        if (in.readByte() == 0) {
+            cod = null;
+        } else {
+            cod = in.readInt();
+        }
+    }
+
+    public static final Creator<TempModel> CREATOR = new Creator<TempModel>() {
+        @Override
+        public TempModel createFromParcel(Parcel in) {
+            return new TempModel(in);
+        }
+
+        @Override
+        public TempModel[] newArray(int size) {
+            return new TempModel[size];
+        }
+    };
+
     public CoordModel getCoord() {
         return coord;
     }
@@ -101,4 +136,32 @@ public class TempModel {
         return cod;
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(base);
+        if (dt == null) {
+            parcel.writeByte((byte) 0);
+        } else {
+            parcel.writeByte((byte) 1);
+            parcel.writeInt(dt);
+        }
+        if (id == null) {
+            parcel.writeByte((byte) 0);
+        } else {
+            parcel.writeByte((byte) 1);
+            parcel.writeInt(id);
+        }
+        parcel.writeString(name);
+        if (cod == null) {
+            parcel.writeByte((byte) 0);
+        } else {
+            parcel.writeByte((byte) 1);
+            parcel.writeInt(cod);
+        }
+    }
 }

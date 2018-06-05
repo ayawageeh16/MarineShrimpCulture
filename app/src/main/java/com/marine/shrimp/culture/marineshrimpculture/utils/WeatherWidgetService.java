@@ -11,10 +11,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Looper;
 import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
-import android.view.View;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -30,8 +27,6 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.SettingsClient;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.marine.shrimp.culture.marineshrimpculture.R;
-import com.marine.shrimp.culture.marineshrimpculture.view.WeatherActivity;
 import com.marine.shrimp.culture.marineshrimpculture.view.WeatherAppWidget;
 import com.marine.shrimp.culture.marineshrimpculture.weatherData.TempModel;
 
@@ -146,9 +141,9 @@ public class WeatherWidgetService extends IntentService{
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         getJsonData();
 
-        AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(WeatherWidgetService.this);
+      /*  AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(WeatherWidgetService.this);
         int[] appWidgetIds = appWidgetManager.getAppWidgetIds(new ComponentName(WeatherWidgetService.this, WeatherAppWidget.class));
         //Now update all widgets
-        WeatherAppWidget.updatePlantWidgets(WeatherWidgetService.this, appWidgetManager,model,appWidgetIds);
+        WeatherAppWidget.updatePlantWidgets(WeatherWidgetService.this, appWidgetManager,model,appWidgetIds);*/
     }
 }

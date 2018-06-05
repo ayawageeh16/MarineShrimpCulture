@@ -9,7 +9,6 @@ import android.support.v4.app.NotificationCompat;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.marine.shrimp.culture.marineshrimpculture.R;
-import com.marine.shrimp.culture.marineshrimpculture.view.MainActivity;
 import com.marine.shrimp.culture.marineshrimpculture.view.WeatherActivity;
 
 public class MyFireBaseMessagingService extends FirebaseMessagingService {

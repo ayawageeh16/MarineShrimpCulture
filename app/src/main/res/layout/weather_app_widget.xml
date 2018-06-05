@@ -3,7 +3,8 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorPrimary"
-    android:padding="@dimen/widget_margin">
+    android:padding="@dimen/widget_margin"
+    android:id="@+id/root_layout">
 
    <LinearLayout
        android:layout_width="match_parent"
@@ -15,35 +16,16 @@
            android:id="@+id/image_widget"
            android:layout_width="150dp"
            android:layout_height="150dp"
-           android:src="@drawable/logoxxx"/>
+           android:src="@drawable/logoxxx"
+           android:contentDescription="TODO" />
 
-       <LinearLayout
+       <TextView
+           android:id="@+id/description_widget"
            android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:orientation="vertical"
-           android:layout_margin="7dp">
-
-           <TextView
-               tools:text="description"
-               android:id="@+id/description_widget"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content" />
-
-           <TextView
-               tools:text="temp_max"
-               android:id="@+id/temp_max_widget"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content" />
-
-           <TextView
-               tools:text="temp_min"
-               android:id="@+id/temp_min_widget"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content" />
-
-       </LinearLayout>
-
-
+           android:layout_margin="15dp"
+           android:textStyle="bold"
+           android:textColor="#000"
+           android:layout_height="wrap_content" />
 
    </LinearLayout>
 

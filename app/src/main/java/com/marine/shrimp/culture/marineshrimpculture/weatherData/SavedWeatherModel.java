@@ -3,7 +3,7 @@ package com.marine.shrimp.culture.marineshrimpculture.weatherData;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class SavedWeatherModel implements Parcelable{
+public class SavedWeatherModel implements Parcelable, Parcelable.Creator<SavedWeatherModel>{
 
     long id;
     String weatherDate, weatherTime, weatherDescription, weatherIcon, weatherPressure, weatherHumidity,
@@ -29,6 +29,34 @@ public class SavedWeatherModel implements Parcelable{
         this.weatherWindDegree = weatherWindDegree;
 
     }
+
+    public SavedWeatherModel(Parcel in) {
+        id = in.readLong();
+        weatherDate = in.readString();
+        weatherTime = in.readString();
+        weatherDescription = in.readString();
+        weatherIcon = in.readString();
+        weatherPressure = in.readString();
+        weatherHumidity = in.readString();
+        weatherTempMax = in.readString();
+        weatherTempMin = in.readString();
+        weatherSeaLevel = in.readString();
+        weatherGrndLevel = in.readString();
+        weatherWindSpeed = in.readString();
+        weatherWindDegree = in.readString();
+    }
+
+    public static final Creator<SavedWeatherModel> CREATOR = new Creator<SavedWeatherModel>() {
+        @Override
+        public SavedWeatherModel createFromParcel(Parcel in) {
+            return new SavedWeatherModel(in);
+        }
+
+        @Override
+        public SavedWeatherModel[] newArray(int size) {
+            return new SavedWeatherModel[size];
+        }
+    };
 
     public long getId() {
         return id;
@@ -89,6 +117,28 @@ public class SavedWeatherModel implements Parcelable{
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeLong(id);
+        parcel.writeString(weatherDate);
+        parcel.writeString(weatherTime);
+        parcel.writeString(weatherDescription);
+        parcel.writeString(weatherIcon);
+        parcel.writeString(weatherPressure);
+        parcel.writeString(weatherHumidity);
+        parcel.writeString(weatherTempMax);
+        parcel.writeString(weatherTempMin);
+        parcel.writeString(weatherSeaLevel);
+        parcel.writeString(weatherGrndLevel);
+        parcel.writeString(weatherWindSpeed);
+        parcel.writeString(weatherWindDegree);
+    }
 
+    @Override
+    public SavedWeatherModel createFromParcel(Parcel parcel) {
+        return new SavedWeatherModel(parcel);
+    }
+
+    @Override
+    public SavedWeatherModel[] newArray(int i) {
+        return new SavedWeatherModel[i];
     }
 }

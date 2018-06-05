@@ -18,7 +18,7 @@
             android:elevation="8dp"
             android:background="#fff"
             android:scaleType="fitXY"
-            />
+            android:contentDescription="TODO" />
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/image_buttons"
@@ -37,7 +37,7 @@
                 android:layout_marginTop="8dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_left_chevron"
-                android:text="previous"
+                android:contentDescription="@string/previous"
                 android:background="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/image_next"
@@ -56,7 +56,7 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_right_chevron"
                 android:background="@android:color/transparent"
-                android:text="Next"
+                android:contentDescription="@string/next"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -83,7 +83,7 @@
                 style="@style/NextAndPreviousButton"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_left_arrow"
-                android:text="previous"
+                android:contentDescription="@string/previous"
                 />
 
             <ImageButton
@@ -94,6 +94,7 @@
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_right_arrow"
                 android:layout_gravity="left"
+                android:contentDescription="@string/next"
                 />
         </LinearLayout>
     </LinearLayout>
