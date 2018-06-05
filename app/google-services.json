@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "627456086568",
+    "firebase_url": "https://shrimpappnotification.firebaseio.com",
+    "project_id": "shrimpappnotification",
+    "storage_bucket": "shrimpappnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627456086568:android:43e33af47d1957db",
+        "android_client_info": {
+          "package_name": "com.marine.shrimp.culture.marineshrimpculture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627456086568-kgt6o3ut2uco95im16lvbr6vq9ng2q1l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "627456086568-kgt6o3ut2uco95im16lvbr6vq9ng2q1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0AiAEUzDbdrGhLjgT8TTLuc_gVwDOjEE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -180,14 +180,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if(id==R.id.about_us_item){
-            Intent intent = new Intent(MainActivity.this, AboutUs.class);
-            startActivity(intent);
-        }else if (id==R.id.sources){
+        if (id==R.id.sources){
             Intent intent = new Intent(MainActivity.this, Sources.class);
             startActivity(intent);
-        }else if (id==R.id.settings){
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+        }else if (id==R.id.weather){
+            Intent intent = new Intent(MainActivity.this, WeatherActivity.class);
+            startActivity(intent);
+        }else if (id==R.id.savedweather){
+            Intent intent = new Intent(MainActivity.this, SavedWeather.class);
             startActivity(intent);
         }
         return false;

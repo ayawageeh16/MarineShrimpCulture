@@ -29,7 +29,9 @@ public class SettingsActivity extends PreferenceActivity {
         public void onCreate(@Nullable Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.preferences);
-
+            bindSummaryValue(findPreference("location"));
+            bindSummaryValue(findPreference("temperature"));
+            //bindSummaryValue(findPreference("notification"));
             bindSummaryValue(findPreference("language"));
         }
     }
@@ -45,12 +47,13 @@ public class SettingsActivity extends PreferenceActivity {
         @Override
         public boolean onPreferenceChange(Preference preference, Object newValue) {
             String stringValue = newValue.toString();
-          if ( preference instanceof ListPreference){
+            if (preference instanceof EditTextPreference) {
+                preference.setSummary(stringValue);
+            }else if ( preference instanceof ListPreference){
                 ListPreference listPreference = (ListPreference) preference;
                 int index = listPreference.findIndexOfValue(stringValue);
                 preference.setSummary(index>0 ? listPreference.getEntries()[index]
                                       : null);
-
             }
             return true;
         }
