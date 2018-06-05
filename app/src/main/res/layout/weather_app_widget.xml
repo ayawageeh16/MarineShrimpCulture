@@ -19,13 +19,28 @@
            android:src="@drawable/logoxxx"
            android:contentDescription="TODO" />
 
-       <TextView
-           android:id="@+id/description_widget"
+       <LinearLayout
            android:layout_width="wrap_content"
-           android:layout_margin="15dp"
-           android:textStyle="bold"
-           android:textColor="#000"
-           android:layout_height="wrap_content" />
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/description_widget"
+               android:layout_width="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="10dp"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:textColor="@color/articleTextColor"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/temp_details"
+               android:textColor="#000"
+               android:textSize="16dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
 
    </LinearLayout>
 

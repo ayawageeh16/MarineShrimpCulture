@@ -142,5 +142,8 @@
     <string name="dikes">Dikes</string>
     <string name="supply_and_drain">Supply and drain</string>
     <string name="water_gate">Water gate</string>
+    <string name="min">min: \t</string>
+    <string name="maxlabel">max: \t</string>
+    <string name="newLine">\n</string>
 
 </resources>

@@ -18,8 +18,6 @@ import com.marine.shrimp.culture.marineshrimpculture.weatherData.TempModel;
 public class WeatherAppWidget extends AppWidgetProvider {
 
     public static TempModel tempModel;
-    public static final String ACTION_TEXT_CHANGED = "com.marine.shrimp.culture.marineshrimpculture.TEXT_CHANGED";
-    public static String s;
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                int appWidgetId) {
@@ -28,28 +26,33 @@ public class WeatherAppWidget extends AppWidgetProvider {
 
         if( tempModel != null) {
 
-            MainTempModel mainTempModel = tempModel.getMain();
+            TempModel mainTempModel = tempModel;
+
+            StringBuilder tempDescription = new StringBuilder();
+
+            tempDescription.append(mainTempModel.getWeather().get(0).getDescription());
+
             StringBuilder sMainTemp = new StringBuilder();
+            sMainTemp.append(context.getString(R.string.min))
+                    .append(mainTempModel.getMain().getTempMin())
+                    .append(context.getString(R.string.newLine))
+                    .append(context.getString(R.string.maxlabel))
+                    .append(mainTempModel.getMain().getTempMax())
+                    .append(context.getString(R.string.newLine))
+                    .append(context.getString(R.string.pressure))
+                    .append(mainTempModel.getMain().getPressure())
+                    .append(context.getString(R.string.newLine))
+                    .append(context.getString(R.string.sea_level))
+                    .append(mainTempModel.getMain().getSeaLevel())
+                    .append(context.getString(R.string.newLine))
+                    .append(context.getString(R.string.grnd_level))
+                    .append(mainTempModel.getMain().getGrndLevel())
+                    .append(context.getString(R.string.newLine))
+                    .append(context.getString(R.string.humidity))
+                    .append(mainTempModel.getMain().getHumidity());
 
-            sMainTemp.append("min: ")
-                    .append(mainTempModel.getTempMin())
-                    .append("\n")
-                    .append("max: ")
-                    .append(mainTempModel.getTempMax())
-                    .append("\n")
-                    .append("pressure: ")
-                    .append(mainTempModel.getPressure())
-                    .append("\n")
-                    .append("sea level: ")
-                    .append(mainTempModel.getSeaLevel())
-                    .append("\n")
-                    .append("grnd_level: ")
-                    .append(mainTempModel.getGrndLevel())
-                    .append("\n")
-                    .append("humidity: ")
-                    .append(mainTempModel.getHumidity());
-
-            views.setTextViewText(R.id.description_widget, sMainTemp);
+            views.setTextViewText(R.id.description_widget, tempDescription);
+            views.setTextViewText(R.id.temp_details, sMainTemp);
 
 
             // Handle click to open the selected recipe in activity
@@ -69,15 +72,6 @@ public class WeatherAppWidget extends AppWidgetProvider {
     }
 
     @Override
-    public void onReceive(Context context, Intent intent) {
-        super.onReceive(context, intent);
-        if (intent.getAction().equals(ACTION_TEXT_CHANGED)) {
-            // handle intent here
-            s = intent.getStringExtra("NewString");
-        }
-    }
-
-    @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         // There may be multiple widgets active, so update all of them
        // WeatherWidgetService.startActionUpdateWidget(context);
@@ -92,13 +86,6 @@ public class WeatherAppWidget extends AppWidgetProvider {
         }
     }
 
-   /* public static void updatePlantWidgets(Context context, AppWidgetManager appWidgetManager,
-                                          TempModel model, int[] appWidgetIds) {
-        for (int appWidgetId : appWidgetIds) {
-            updateAppWidget(context, appWidgetManager, model, appWidgetId);
-            Log.d("HEY HEY HEY WIDGET",model.toString());
-        }
-    }*/
 
     @Override
     public void onEnabled(Context context) {
