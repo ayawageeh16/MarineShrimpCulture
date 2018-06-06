@@ -6,13 +6,9 @@ import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.TaskStackBuilder;
-import android.util.Log;
 import android.widget.RemoteViews;
 
 import com.marine.shrimp.culture.marineshrimpculture.R;
-import com.marine.shrimp.culture.marineshrimpculture.utils.WeatherWidgetService;
-import com.marine.shrimp.culture.marineshrimpculture.view.WeatherActivity;
-import com.marine.shrimp.culture.marineshrimpculture.weatherData.MainTempModel;
 import com.marine.shrimp.culture.marineshrimpculture.weatherData.TempModel;
 
 public class WeatherAppWidget extends AppWidgetProvider {
@@ -56,8 +52,8 @@ public class WeatherAppWidget extends AppWidgetProvider {
 
 
             // Handle click to open the selected recipe in activity
-            Intent intent = new Intent(context, WeatherActivity.class);
-            intent.putExtra(WeatherActivity.EXTRA_WEATHER, tempModel);
+            Intent intent = new Intent(context, MainActivity.class);
+            // intent.putExtra(WeatherActivity.EXTRA_WEATHER, tempModel);
             PendingIntent pendingIntent = TaskStackBuilder.create(context)
                     .addNextIntentWithParentStack(intent)
                     .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -73,8 +69,6 @@ public class WeatherAppWidget extends AppWidgetProvider {
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
-        // There may be multiple widgets active, so update all of them
-       // WeatherWidgetService.startActionUpdateWidget(context);
         for (int appWidgetId : appWidgetIds) {
             updateAppWidget(context, appWidgetManager, appWidgetId);
         }

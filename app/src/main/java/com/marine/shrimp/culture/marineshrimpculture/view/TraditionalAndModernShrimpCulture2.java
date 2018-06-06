@@ -27,11 +27,10 @@ public class TraditionalAndModernShrimpCulture2 extends AppCompatActivity implem
     private ImageView image;
     private ImageButton nextPage, previousPage, nextImage, previousImage;
     private TextView title1,title2,title3,title4,title5,description1,description2,description3,description4,description5;
-    private LinearLayout ButtonslinearLayout , linearLayout ;
+    private LinearLayout linearLayout ;
     private ConstraintLayout constraintLayout;
     private ScrollView scrollView;
     private List<TraditionalAndModernModel> data = new ArrayList<>();
-    private TraditionalAndModernData traditionalAndModelData ;
     private int position, numberOfPages,counter=0, numberOfImages = 0, imageCounter = 1;
     private LruCache bitmapCache ;
 
@@ -55,7 +54,7 @@ public class TraditionalAndModernShrimpCulture2 extends AppCompatActivity implem
         description5=findViewById(R.id.traditional_and_modern_description5_tv);
         nextImage=findViewById(R.id.image_next);
         previousImage=findViewById(R.id.image_previous);
-        ButtonslinearLayout =findViewById(R.id.traditional_and_modern_linearlayout);
+        LinearLayout buttonslinearLayout = findViewById(R.id.traditional_and_modern_linearlayout);
         constraintLayout=findViewById(R.id.image_buttons);
         linearLayout=findViewById(R.id.tradiaditional_linearlayout);
         scrollView=findViewById(R.id.tradiaditional_scrollview);
@@ -63,14 +62,14 @@ public class TraditionalAndModernShrimpCulture2 extends AppCompatActivity implem
         Bundle extras = getIntent().getExtras();
         position = extras.getInt("number");
 
-        traditionalAndModelData = new TraditionalAndModernData(TraditionalAndModernShrimpCulture2.this);
-        data=traditionalAndModelData.createList();
+        TraditionalAndModernData traditionalAndModelData = new TraditionalAndModernData(TraditionalAndModernShrimpCulture2.this);
+        data= traditionalAndModelData.createList();
 
         if (position == 0){
             numberOfPages= 4;
         }else if (position == 4){
             numberOfPages=1;
-            ButtonslinearLayout.setVisibility(View.INVISIBLE);
+            buttonslinearLayout.setVisibility(View.INVISIBLE);
         }
 
         final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);

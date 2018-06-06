@@ -15,7 +15,7 @@
             android:background="#fff"
             android:elevation="8dp"
             android:layout_height="350dp"
-            android:contentDescription="TODO" />
+            android:contentDescription="@string/design_and_construction_image" />
 
         <TextView
             android:id="@+id/design_construction_title_tv"

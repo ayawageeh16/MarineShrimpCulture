@@ -9,9 +9,9 @@ import java.util.List;
 
 public class TraditionalAndModernData {
 
-    static Context context;
-    static List<TraditionalAndModernModel> list = new ArrayList<>();
-    static TraditionalAndModernModel model;
+     Context context;
+     List<TraditionalAndModernModel> list = new ArrayList<>();
+     TraditionalAndModernModel model;
 
     public TraditionalAndModernData(Context context){
         this.context=context;

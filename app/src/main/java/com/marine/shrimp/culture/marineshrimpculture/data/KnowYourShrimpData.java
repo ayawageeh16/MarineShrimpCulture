@@ -8,11 +8,12 @@ import java.util.ArrayList;
 
 public class KnowYourShrimpData {
 
-    static KnowYourShrimpModel model;
-    static Context context;
-    static int image;
-    static String description;
-    static ArrayList<KnowYourShrimpModel> list = new ArrayList<>();
+
+     KnowYourShrimpModel model;
+     Context context;
+     int image;
+     String description;
+     ArrayList<KnowYourShrimpModel> list = new ArrayList<>();
     public KnowYourShrimpData (Context context){
         this.context=context;
     }

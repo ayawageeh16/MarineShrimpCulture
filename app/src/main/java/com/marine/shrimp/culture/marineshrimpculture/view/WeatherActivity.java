@@ -174,6 +174,7 @@ public class WeatherActivity extends AppCompatActivity {
     public void getCurrentTime() {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat mdformat = new SimpleDateFormat("HH:mm:ss");
+
         currentTime =  mdformat.format(calendar.getTime());
     }
 

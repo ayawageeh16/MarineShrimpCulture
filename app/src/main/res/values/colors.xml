@@ -4,8 +4,6 @@
     <color name="colorPrimaryDark">#1abc9c</color>
     <color name="colorAccent">#e67e22</color>
 
-    <color name="textViewBackground">#ecf0f1</color>
     <color name="articleTextColor">#2c3e50</color>
     <color name="articleTitleColor">#1abc9c</color>
-    <color name="btcolor">#d1d8e0</color>
 </resources>

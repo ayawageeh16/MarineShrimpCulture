@@ -24,7 +24,7 @@
         android:layoutDirection="ltr"
         app:menu="@menu/navigation_menu"
         android:textDirection="ltr"
-        android:gravity="left"
+        android:gravity="start"
         ></android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>

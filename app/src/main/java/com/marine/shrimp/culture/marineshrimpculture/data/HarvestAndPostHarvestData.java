@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class HarvestAndPostHarvestData {
 
-    static Context context;
-    static ArrayList<HarvestAndPostHarvestModel> list = new ArrayList<>();
-    static HarvestAndPostHarvestModel model;
+    Context context;
+     ArrayList<HarvestAndPostHarvestModel> list = new ArrayList<>();
+     HarvestAndPostHarvestModel model;
 
     public HarvestAndPostHarvestData(Context context) {
         this.context = context;

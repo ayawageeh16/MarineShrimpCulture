@@ -17,7 +17,7 @@
             android:scaleType="fitXY"
             android:background="#fff"
             android:elevation="8dp"
-            android:contentDescription="TODO" />
+            android:contentDescription="@string/common_species_image" />
 
         <TextView
             android:id="@+id/common_title_tv"

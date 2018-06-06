@@ -26,9 +26,6 @@
     <string name="site_factors">Other factors</string>
     <string name="site_source">Source</string>
     <string name="site_selection_label">Site selection</string>
-    <string name="about_us_label">About us</string>
-    <string name="water_next_btn">Next</string>
-    <string name="water_previous_btn">previous</string>
     <string name="water_quality_label">Water quality</string>
     <string name="design_and_consruction">Design and construction</string>
     <string name="management_practice">Management practice</string>
@@ -58,16 +55,6 @@
     <string name="app_hashtag">"#marineshrimpculture"</string>
     <string name="failed">failed</string>
 
-
-    <!--Used in overflow menu to refresh weather data-->
-    <string name="action_refresh">Refresh</string>
-
-    <string name="pref_units_metric" translatable="false">metric</string>
-
-    <string name="pref_units_imperial" translatable="false">imperial</string>
-
-    <string name="today">Today</string>
-
     <!-- - - - - - - - - - - - - - - - -
           - Used by WeatherUtils   -
           - - - - - - - - - - - - - - - - -->
@@ -78,46 +65,7 @@
         <xliff:g id="direction">%2$s</xliff:g>
     </string>
 
-    <!-- Wind in mph -->
-    <string name="format_wind_mph">
-        <xliff:g id="speed">%1$1.0f</xliff:g> mph
-        <xliff:g id="direction">%2$s</xliff:g>
-    </string>
-
-    <string name="pressure_label">Pressure</string>
-    <!-- Pressure format -->
-    <string name="format_pressure">
-        <xliff:g id="pressure">%1.0f</xliff:g> hPa
-    </string>
-
-    <string name="humidity_label">Humidity</string>
-    <!-- Humidity format -->
-    <string name="format_humidity">
-        <xliff:g id="humidity">%1.0f</xliff:g> %%
-    </string>
-
-    <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
-
-    <string name="a11y_forecast">Forecast: <xliff:g id="condition">%1$s</xliff:g></string>
-    <string name="a11y_forecast_icon">Forecast icon: <xliff:g id="condition">%1$s</xliff:g></string>
-    <string name="a11y_high_temp">High: <xliff:g id="high">%1$s</xliff:g></string>
-    <string name="a11y_low_temp">Low: <xliff:g id="low">%1$s</xliff:g></string>
-    <string name="a11y_humidity">Humidity: <xliff:g id="humidity">%1$s</xliff:g></string>
-    <string name="a11y_pressure">Barometric Pressure: <xliff:g id="pressure">%1$s</xliff:g></string>
-    <string name="a11y_wind">Wind speed and direction: <xliff:g id="wind">%1$s</xliff:g></string>
-
-
-    <!-- Used by NotificationUtils -->
-
-    <!-- The format of the notification we show when the weather is updated -->
-    <string name="format_notification">
-        Forecast:<xliff:g id="condition">%1$s</xliff:g> -
-        High:<xliff:g id="high">%2$s</xliff:g>
-        Low:<xliff:g id="low">%3$s</xliff:g>
-    </string>
     <string name="SavedWeather">SavedWeather</string>
-    <string name="appwidget_text">EXAMPLE</string>
-    <string name="add_widget">Add widget</string>
     <string name="next">next</string>
     <string name="previous">previous</string>
     <string name="save">saveweather</string>
@@ -145,5 +93,18 @@
     <string name="min">min: \t</string>
     <string name="maxlabel">max: \t</string>
     <string name="newLine">\n</string>
+    <string name="traditional_activity_image">traditional activity image</string>
+    <string name="biosecurity_activity_image">biosecurity activity image</string>
+    <string name="diseases_activity_image">diseases</string>
+    <string name="harvest_and_post_harvest">harvest and post harvest actiivity image</string>
+    <string name="management_practice2">management practice image</string>
+    <string name="design_and_construction_image">design and construction image</string>
+    <string name="water_quality_image">water quality image</string>
+    <string name="site_selection_image">site selection image</string>
+    <string name="common_species_image">common species image</string>
+    <string name="know_your_shrimp_image">know your shrimp image</string>
+    <string name="card_rv_image">card image</string>
+    <string name="weather_image">weather image</string>
+    <string name="widget_image">widget image</string>
 
 </resources>

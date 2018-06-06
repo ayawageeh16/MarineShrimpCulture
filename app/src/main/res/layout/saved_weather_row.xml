@@ -20,7 +20,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:srcCompat="@drawable/light_clouds"
-        android:contentDescription="TODO" />
+        android:contentDescription="@string/weather_image" />
 
     <LinearLayout
         android:layout_width="wrap_content"

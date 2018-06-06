@@ -17,7 +17,7 @@
             android:scaleType="fitXY"
             android:background="#fff"
             android:elevation="8dp"
-            android:contentDescription="TODO" />
+            android:contentDescription="@string/diseases_activity_image" />
 
         <TextView
             android:id="@+id/diseases_title_tv"
@@ -101,7 +101,7 @@
                 android:id="@+id/diseases_previous_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:src="@drawable/ic_left_arrow"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/previous"
@@ -114,7 +114,7 @@
                 android:src="@drawable/ic_right_arrow"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/next"
-                android:layout_gravity="left"
+                android:layout_gravity="start"
                 android:layout_weight="1"/>
         </LinearLayout>
 

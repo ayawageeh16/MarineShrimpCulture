@@ -8,9 +8,10 @@ import java.util.ArrayList;
 
 public class DesginAndConstructionData {
 
-    static Context context;
-    static ArrayList<DesignAndDestructionModel> list = new ArrayList<>();
-    static  DesignAndDestructionModel model ;
+
+     Context context;
+     ArrayList<DesignAndDestructionModel> list = new ArrayList<>();
+     DesignAndDestructionModel model ;
     public DesginAndConstructionData(Context context){
         this.context=context;
     }

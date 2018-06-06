@@ -9,9 +9,9 @@ import java.util.List;
 
 public class DiseasesAndViralDiseaseData {
 
-    static Context context ;
-    static List<DiseasesAndViralDiseaseModel> list = new ArrayList<>();
-    static DiseasesAndViralDiseaseModel model;
+     Context context ;
+     List<DiseasesAndViralDiseaseModel> list = new ArrayList<>();
+     DiseasesAndViralDiseaseModel model;
     public DiseasesAndViralDiseaseData(Context context){
         this.context=context;
     }

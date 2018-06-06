@@ -21,7 +21,7 @@
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/know_your_shrimp"
                 app:layout_collapseMode="parallax"
-                android:contentDescription="TODO" />
+                android:contentDescription="@string/know_your_shrimp_image" />
 
             <TextView
                 android:id="@+id/description_tv"

@@ -6,8 +6,8 @@ import com.marine.shrimp.culture.marineshrimpculture.R;
 
 public class SiteSelectionData {
 
-    static Context context;
-    static  SiteSelectionModel model ;
+     Context context;
+     SiteSelectionModel model ;
 
     public SiteSelectionData(Context context){
         this.context=context;

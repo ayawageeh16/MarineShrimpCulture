@@ -16,7 +16,7 @@
             android:background="#fff"
             android:elevation="8dp"
             android:scaleType="fitXY"
-            android:contentDescription="TODO" />
+            android:contentDescription="@string/design_and_construction_image" />
 
         <TextView
             android:id="@+id/design_construction_title_tv"
@@ -48,8 +48,8 @@
                 android:src="@drawable/ic_left_arrow"
                 android:background="@android:color/transparent"
                 android:layout_weight="1"
-                android:layout_gravity="left"
-                android:contentDescription="TODO" />
+                android:layout_gravity="start"
+                android:contentDescription="@string/design_and_construction_image" />
 
             <ImageButton
                 android:id="@+id/design_construction_next_btn"
@@ -59,8 +59,8 @@
                 android:layout_marginBottom="5dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_right_arrow"
-                android:layout_gravity="right"
-                android:contentDescription="TODO" />
+                android:layout_gravity="end"
+                android:contentDescription="@string/design_and_construction_image" />
 
         </LinearLayout>
 

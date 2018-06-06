@@ -12,7 +12,7 @@
     android:layout_marginBottom="4dp"
     android:clickable="true"
     android:focusable="true"
-    android:foreground="?selectableItemBackground">
+  >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:scaleType="fitXY"
-            android:contentDescription="TODO" />
+            android:contentDescription="@string/card_rv_image" />
 
         <TextView
             android:id="@+id/title_tv"
@@ -37,8 +37,8 @@
             android:paddingBottom="10dp"
             android:textStyle="bold"
             android:textColor="@color/articleTextColor"
-            android:textSize="18dp"
-            android:gravity="left"
+            android:textSize="18sp"
+            android:gravity="start"
             android:textDirection="ltr"
             />
 

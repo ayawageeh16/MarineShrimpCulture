@@ -7,9 +7,10 @@ import com.marine.shrimp.culture.marineshrimpculture.R;
 import java.util.ArrayList;
 
 public class ManagementPracticeData {
-    static Context context;
-    static ArrayList<ManagementPracticeModel> list = new ArrayList<>();
-    static ManagementPracticeModel model ;
+
+     Context context;
+     ArrayList<ManagementPracticeModel> list = new ArrayList<>();
+     ManagementPracticeModel model ;
     public ManagementPracticeData(Context context){
         this.context=context;
     }
