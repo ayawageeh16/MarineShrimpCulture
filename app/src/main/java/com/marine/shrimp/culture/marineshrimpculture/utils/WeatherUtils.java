@@ -19,21 +19,21 @@ public final class WeatherUtils {
 
             String direction = "Unknown";
             if (degrees >= 337.5 || degrees < 22.5) {
-                direction = "N";
+                direction = context.getString(R.string.Ndirection);
             } else if (degrees >= 22.5 && degrees < 67.5) {
-                direction = "NE";
+                direction = context.getString(R.string.NEdirection);
             } else if (degrees >= 67.5 && degrees < 112.5) {
-                direction = "E";
+                direction = context.getString(R.string.Edirection);
             } else if (degrees >= 112.5 && degrees < 157.5) {
-                direction = "SE";
+                direction = context.getString(R.string.SEdirection);
             } else if (degrees >= 157.5 && degrees < 202.5) {
-                direction = "S";
+                direction = context.getString(R.string.Sdirection);
             } else if (degrees >= 202.5 && degrees < 247.5) {
-                direction = "SW";
+                direction = context.getString(R.string.SWdirection);
             } else if (degrees >= 247.5 && degrees < 292.5) {
-                direction = "W";
+                direction = context.getString(R.string.Wdirection);
             } else if (degrees >= 292.5 && degrees < 337.5) {
-                direction = "NW";
+                direction = context.getString(R.string.NWdirection);
             }
 
             return String.format(context.getString(windFormat), windSpeed, direction);

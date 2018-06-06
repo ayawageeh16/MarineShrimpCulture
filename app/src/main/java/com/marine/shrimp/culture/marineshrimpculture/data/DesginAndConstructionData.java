@@ -21,7 +21,7 @@ public class DesginAndConstructionData {
         String title, description;
         int image1;
 
-        title ="Design And Destruction";
+        title =context.getString(R.string.design1title);
         description ="There is no standard design for a shrimp rearing pond.\n" +
                 " Present day farming practices still heavily rely on the experience of individual farmers, financial capability and the environmental condition prevailing at the site.\n" +
                 " A shrimp pond from the engineering view point is essential an improved finfish culture pond.\n" +

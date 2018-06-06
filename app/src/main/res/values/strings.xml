@@ -107,5 +107,578 @@
     <string name="weather_image">weather image</string>
     <string name="widget_image">widget image</string>
     <string name="app_tag">Marine Shrimp App</string>
+    <string name="Penaeusmonodon">Penaeus monodon</string>
+
+    <string name="commonName">Giant tiger prawn that Named for its huge size and banded tail.</string>
+    <string name="commonspeciesdescription">Females can reach about 33 cm (13 in) long and weight 200–320 g."\n"
+                "males are slightly smaller at 20–25 cm (8–10 in) long and weighing 100–170 g." "\n"
+                "the carapace and abdomen are transversely banded with alternative red and white."
+                " The antennae are grayish brown. Brown pereiopods and pleopods are present with fringing setae in red.</string>
+    <string name="commonspeciesdistribution">its natural distribution is the Indo-Pacific, ranging from the eastern coast of Africa and the Arabian Peninsula, as far as Southeast Asia, the Pacific Ocean, and northern Australia.</string>
+    <string name="commonspeciesstocking">25000-50000/hectare.</string>
+    <string name="commonspeciestolerance">They tolerate a wide range of salinities and temperatures.</string>
+    <string name="commonspeciesprotein">Protein between 40 and 50 gave the best growth.</string>
+    <string name="commonspeciessurvival">survivals are low (20 to 30). Tigers are very susceptible to two of the most lethal shrimp viruses: yellow head and white spot disease.</string>
+    <string name="commonspeciesmarket">3.\tIts price is still higher than L. vannamei.
+        1.\tPenaeus monodon is the most prominent farmed crustacean product in international trade.\n"
+                "2.\tp.monodon has driven a significant expansion in aquaculture in many developing countries in Asia.\n" </string>
+    <string name="commonspeciesspf">Based on the highly successful development of Specific Pathogen Free (SPF)  of Penaeus vannamei brood stock ,the U.S. shrimp industry develop a stock of SPF P. monodon which is the most important (in volume and value) farm-raised shrimp worldwide.\n"
+                "Major elements of an SPF process include:\n"
+                "1.\tCapture of apparently healthy wild stock from areas of low disease prevalence.\n"
+                "2.\tIndividual primary quarantine where the shrimp can be individually screened for specific pathogens and the contaminated individuals destroyed.\n"
+                "3.\tThe shrimp are then transferred to secondary quarantine where they are reared to brood stock size and monitored regularly.\n"
+                "4.\tThe disease-free broodstock transferred to the breeding center for production.\n"
+                "5.\tLarvae are then reared in bio secure hatcheries.\n"
+                "\n</string>
+    <string name="PenaeusVannameititle">Penaeus Vannamei</string>
+    <string name="PenaeusVannameicommonname">Western White Shrimp or King prawn.</string>
+    <string name="vdescription">Vannamei grows to a maximum length of 230 millimeters (9.1 in), with a carapace length of 90 mm (3.5 in)"+"\n"
+                "Adults live in the ocean, at depths of up to 72 meters (236 ft), while juveniles live in estuaries.""\n"
+                "The rostrum is moderately long, with 7–10 teeth on the dorsal side and 2–4 teeth on the ventral side"</string>
+    <string name="commonspeciesproblem">shortages of wild broodstock often exist, captive breeding is difficult and hatchery.</string>
+    <string name="vdiscription2">Native to the Pacific coast of Central and South America</string>
+    <string name="vstocking">Can be cultured in high stocking densities up to 60/m2</string>
+    <string name="vtolerance">They tolerate a wide range of salinities 0.5 to 45 ppt and low temperatures can reach 15 c.</string>
+    <string name="vprotein">Can tolerate low protein feed 20%: 35%</string>
+    <string name="vsurvival">high from 50 to 60%.</string>
+    <string name="vmarket">Has a very good market but less than monodon.</string>
+    <string name="vspf">Commercial availability of SPF and high health stock is an added advantage.</string>
+    <string name="design1title">Design And Destruction</string>
+    <string name="design1description">There is no standard design for a shrimp rearing pond.\n"
+                " Present day farming practices still heavily rely on the experience of individual farmers, financial capability and the environmental condition prevailing at the site.\n"
+                " A shrimp pond from the engineering view point is essential an improved finfish culture pond.\n"
+                "The improved structural design is largely due to the behavior of the Penaeid shrimps.\n"
+                "Penaeid shrimps are benthic animals and it has a habit of gathering along tank walls. \n"
+                "Any design to increase the wall surface eg. adding substrates or an elevated earthen platform extending along the edges of a pond, can promote high stocking densities.\n"
+                "An ideal shrimp farm is a complex establishment consisting of: \n"
+                "1- various size ponds for nursery and grow-out\n"
+                "2- water control structures including embankments, supply and drainage canals and sluice gates\n"
+                "3- support facilities such as roads, bridges, living quarters, workshops and warehouses, etc.\n"
+                "Careful layout of the described facilities and appropriate structural design in relation to the physical features of the area ensure smooth and effective operational management.\n"
+                "\n </string>
+    <string name="DiseasesAndViralDiseaseDatatitle">Bacterial shell disease</string>
+    <string name="DiseasesAndViralDiseaseSummery1">This disease is also called as brown spot shell disease / burned spot disease / rust disease /
+                shell disease or blackspot disease</string>
+    <string name="DiseasesandViralDiseasesTitle1">clinical signs</string>
+    <string name="DiseaseaandViralDiseasesdescription1">•\tLesions - brownish to black in color.\n"
+                "•\tSingle or multiple eroded areas on the general body cuticle, appendages, or gills\n"
+                "•\tLesions begin as small local lesions (due to abrasions, puncture wounds, chemical trauma or other causes) that rapidly enlarge\n"
+                "•\tcause erosions and ulcerations of the cuticle by lipases, proteases, and chitinases.\n"
+                "•\tblack pigment in the lesions is melanin - end product of the crustacean inflammatory response.\n"
+                "•\tIf not resolved by the shrimp defense, septicemia and death will result.\n</string>
+    <string name="DiseasesAndViralDiseaseDatatitle2">Control measures</string>
+    <string name="DiseaseaandViralDiseasesdescription2">•\tProvision of better water quality, removal of infected and dead prawns, reducing the stock and adequate nutrition\n"
+                "•\tReduce the organic load in the pond by increased water exchange.\n"
+                "•\tFeed terramycin incorporated feed at 0.45 mg/kg of feed for two weeks,"
+                " bath treatment using 0.05 to 1.0 mg of malachite green per litre of water are suggested\n</string>
+    <string name="diseasesandviraltitle3">Prevention</string>
+    <string name="DiseaseaandViralDiseasesdescription3">•\tMaintain good water quality and reduce organic load by removing sediments, dead shrimps and moulted exoskeletons which harbour high numbers of bacteria on the lesions.\n"
+                "•\tMinimize handling and avoid overcrowding.\n"
+                "Treatment\t\n"
+                "Treatment with formalin 25 ppm in static condition for 24 hrs is recommended\n</string>
+    <string name="EmsTitle">EMS</string>
+    <string name="EmsTitle1">Behavioral changes</string>
+    <string name="Emsdescription1">•\t Mortality (up to 100 % 20-30 days after stocking)\n"
+                "•\t Lethargy\n"
+                "•\t low speed in growth rate\n"
+                "•\t Spiral swimming\n"
+                "•\t Swimming sluggishly along the dikes\n"
+                "•\t Reduced preening and feeding \n"
+                "•\t Affected shrimp sank to the pond bottom and die\n</string>
+    <string name="emsTitle2">Pathological signs:</string>
+    <string name="Emsdescription2">External\n"
+    "•\t Soft texture of the exoskeleton\n"
+    "Internal \n"
+    "•\t whitening of the hepatopancreas\n"
+    "•\t reduction in size of hepatopancreas\n"
+    "•\t Dark spots or streaks on the hepatopancreas\n"
+    "•\t Hardening of hepatopancreas\n</string>
+    <string name="virbosistilte">Vibrosis in culture ponds</string>
+    <string name="virbosisTitle2">Behavioral changes</string>
+    <string name="virbosisdescription1">•\tAffected shrimps lost their escape reflexes</string>
+    <string name="virbosisititle2">Pathological signs</string>
+    <string name="virbosisdescription2">External signs:\n"
+                "•\t Major symptoms were cloudiness in hepatopancreas in PL, \n"
+                "•\t cloudiness of muscles in sixth abdominal segment\n"
+                "•\t progressive spots on gills and lymphoid organ\n"
+                "•\t The symptoms observed are lethargic swimming of shrimps at the end of the grow out period. Survival was 5-30% with stunted growth of the individuals.\n"
+                "•\t had darkened color and heavy fouling by epibionts. Less affected were pale and opaque, and gills were brown in color.\n"
+                "•\t Body reddening, extended gill covers, slight melanized erosion of uropods, pleopods and periopods.\n"
+                "Internal signs:\n\n" +
+                "•\t empty stomach and midgut except for a watery white liquid. Small black spots on the lymphoid organ.\n"
+                "Control of Vibrosis \n" +
+                "•\t Salinity and nutrient content of the water\n"
+                "•\t High salinity favors the growth of Vibrio in general. Higher quantities of organic and inorganic fertilizers also contributed to the bloom of Vibrio spp.\n"
+                "•\t Control of Vibrosis in culture ponds\n"
+                "•\t Reduction of biomass by partial harvest or reducing stocking density and increasing the water exchange\n"
+                "•\t For subsequent production cycles, dry the pond bottom soil cracks.\n"
+                "•\t Excessive detritus have to be removed physically by desilting the pond bottom. Quick lime has to be applied at the rate of 0.5 kg/m2 of pond bottom.\n</string>
+    <string name="virbosistitle3">Antibacterial agents used to control vibriosis</string>
+    <string name="virbosisdescription3">•\t Oxytetracycline (OTC) medicated feeds were reported to be effective in controlling vibriosis\n"
+                "•\t Administration of 5 or 100 mg/kg of body weight of shrimp per day of OCT in a special feed for 4 to 6 days was found effective.\n</string>
+    <string name="AHNDtitle">AHND</string>
+    <string name="AHNDsummery">Acute Hepatopancreatic Necrosis Disease\n"
+                "Early Mortality Syndrome (EMS)\n</string>
+    <string name="AHNDtitle1">Susceptible species</string>
+    <string name="AHNDdescription1">black tiger shrimp (P.monodon) \n"
+                "American white leg shrimp (L. Vannamei)\n</string>
+    <string name="AHNDtitle2">Clinical signs</string>
+    <string name="AHNDdescription2">This disease specified with mass mortality (up to100%) 20-30 days after stocking.\n"
+                "Most important\n"
+                "•\t lethargy \n"
+                "•\t low speed in slow growth rate\n"
+                "•\t spiral swimming, as well as empty or interrupted gut.\n"
+                "•\t abnormal hepatopancreas (Emaciated, small, distended, pale or black coloration).\n"
+                "•\t Therefore, some of the behavioral changes such as lethargy, swimming sluggishly along the dikes, spiral swimming and reduced preening and feeding are also observed in EMS.\n"
+                "Prevention and control:\n\n"
+                "•\t Full compliance with the principles of pond preparation (washing, spraying lime, plowing, etc.)\n"
+                "•\t Due to the increasing incidence of disease in high pH water, decreasing or pH control can be considered as a strategy for disease prevention. However, in this case, hydrogen sulfide toxicity possibility increases\n"
+                "\n</string>
+    <string name="IHHNVtitle">Susceptible species</string>
+    <string name="IHHNVtitle1">Infectious hypodermal and hematopoietic necrosis virus (IHHNV)</string>
+    <string name="IHHNVdesvription1">P. monodon (black tiger shrimp/prawn) \n"
+                "P. vannamei (Pacific white shrimp)\n"
+                "P. stylirostris (Pacific blue shrimp).\n</string>
+    <string name="IHHNVtitle2">Clinical signs</string>
+    <string name="IHHNVdesvription2">Certain cuticular deformities (specifically a deformed rostrum bent to the left or right),which may be presented by P. Vannamei and P. stylirostris with RDS, are pathognomonic for infection by IHHNV as P. Vannamei, P. stylirostris, and P. monodon can be infected by IHHNV and not present obvious signs of infection (e.g. they may only show markedly reduced growth rates or ‘runting’)\n" +
+                " \n" +
+                "IHHN disease in Penaeus Vannamei \n\n"
+                "•\t prevalence of RDS in infected populations of juvenile or older Vannamei may be related to infection during the larval or early PL stages.\n"
+                "•\t Juvenile shrimp with RDS may display a bent (45° to 90° bend to left or right) otherwise deformed rostrum, a deformed sixth abdominal segment \n"
+                "•\t wrinkled antennal flagella\n"
+                "•\t cuticular roughness\n"
+                "•\t bubble-heads \n"
+                "•\t Populations of juvenile shrimp with RDS display disparate growth with a wide distribution of sizes and many smaller than expected (‘runted’) shrimp.\n</string>
+    <string name="IHHNVtitle3">Control/Treatment</string>
+    <string name="IHHNVdescription3">No effective vaccination methods for IHHNV have been developed</string>
+
+
+    <string name="tauratitle">Taura Syndrome (TS)</string>
+    <string name="tauratitle1">Susceptible species</string>
+    <string name="tauradesvription1">Penaeus Vannamei\n"
+                "Penaeus monodon\n</string>
+    <string name="tauratitle2">Clinical signs</string>
+    <string name="tauradesvription2">Acute phase: \n\n" +
+                "pale reddish colouration with the tail fan and pleopods appearing distinctly reddish due to the expansion of the red chromatophores typically the cutical is soft and the gut empty, \n"
+                "Chronic/recovery phase:\n\n"
+                " shrimp may or may not have reddish colouration and soft cuticles but often show multifocal, melanized cuticular lesions typical of bacterial shell disease which are resolved after successful molting\n"
+                "Control/Treatment\n\n"
+                "•\t These methods are dependent on the total depopulation of infected stocks \n"
+                "•\t disinfection of the culture facility\n"
+                "•\t avoidance of re-introduction of the virus from other nearby culture facilities, wild shrimp, etc. \n"
+                "•\t re-stocking with TS-free postlarvae that have been produced from TS-free broodstock.\n</string>
+
+
+    <string name="WSSVtitle">White-spot syndrome virus (WSSV)</string>
+    <string name="WSSVtitle1">Susceptible species</string>
+    <string name="WSSVdesvription1">All penaeid shrimps (monodon, Vannamei, Indicus.etc)</string>
+    <string name="WSSVtitle2">Clinical signs</string>
+    <string name="WSSVdesvription2">•\t Affected shrimp exhibit\n\n"
+                "•\t Anorexia\n"
+                "•\t lethargy\n"
+                "•\t reddish discoloration and presence of circular.\n"
+                "•\t white spots on the carapace and other exoskeletal parts.\n"
+                "•\t Vannamei shrimp, white spots may not be clearly visible.\n"
+                "•\t Mortality of shrimp may start 2-3 days after infection and\n"
+                "reach 80-90 percent within 5-7 days of onset of first mortalities,\n"
+                "necessitating emergency harvest.\n</string>
+    <string name="WSSVtitle3">Prevention and control</string>
+    <string name="WSSVdescription3">•\t WSSV can persist in wet soil, carry out pond preparation properly by drying, applying lime etc. Provide sufficient time of at least three to four weeks between the culture cycles to enable the pond soil to completely dry\n"
+                "\n"
+                "•\t Stock only post larvae (PL) of at least PL15 stage. \n"
+                "•\t Select healthy PL using stress tests and make sure that the PL are negative for WSSV by PCR testing.\n"
+                "\n"
+                "•\t Adopt strict biosecurity measures by providing reservoir ponds, bird and crab fencing, proper sanitation of men, material and machines\n"
+                "\n"
+                "•\t Usages of probiotics and immunostimulant may be helpful.\n"
+                "•\t However, avoid using too many chemicals / unauthorized\n"
+                "•\t Products without knowing their exact effect.\n"
+                "\n</string>
+
+    <string name="YHDtitle">Yellow-head Virus Disease (YHD)</string>
+    <string name="YHDtitle1">Susceptible species</string>
+    <string name="YHDdesvription1">Penaeus Vannamei\n"
+                "Penaeus stylirostris\n"
+                "Penaeus monodon\n</string>
+    <string name="YHDtitle2">Clinical signs</string>
+    <string name="YHDdesvription2">•\t feeding increases followed by reduced feeding in later stages of the disease. \n"
+                "•\t Pale body\n"
+                "•\t yellowish swollen cephalothorax and hepatopancreas\n"
+                "•\t whitish-yellowish-brownish gills\n</string>
+    <string name="YHDtitle3">Methods of control</string>
+    <string name="YHDdescription3">•\t tNo known treatment\n"
+                "•\t Early detection and emergency harvest followed by thorough disinfection.\n"
+                "•\t lessening stress by maintaining optimal pond environment and rearing conditions may help\n"
+                "•\t maintain consistent phytoplankton blooms at 25-35 cm transparency  \n"
+                "•\t maintaining stable pH in the pond. \n"
+                "•\t After harvesting the shrimp, the accumulated sediments and organic material should be removed followed by careful pond preparation.\n"
+                "•\t A semi-closed or closed culture system which restricts inflow of new water and recirculates treated water is another method which is sometimes useful. \n"
+                "•\t Waterborne infection is possible and cell-free virus was found to be virulent in water up to 72 hours. \n"
+                "•\t .Chlorine at 20-30 ppm is an effective disinfectant in laboratory conditions. \n"
+                "•\t The use of probiotics and immuno-enhancers is being investigated\n"
+                "\n</string>
+
+    <string name="biosecuritytitle">Biosecurity Defined</string>
+    <string name="biosecuitytitle1">All of the proactive strategies that are used to lessen the potential impact of pathogenic organisms on your crop.”\n"
+                "Disease is the outcome of the relationship between the host, the pathogen and the environment\n</string>
+
+
+    <string name="watersourcetitle">Water source</string>
+    <string name="watersourcetitle1">•\tClean water from sources free of pollution and contamination.\n"
+                "•\tWater from oceanic source typically very clean with low pathogen loads and low nutrient loads.\n"
+                "•\tWater from estuaries generally has higher nutrient loads, high bacterial loads and higher vector loads. Typically, a source of vibrio and other potential problems.\n</string>
+
+    <string name="filtrationtitle">Filtration of incoming water</string>
+    <string name="filtrationtitle1">Filtering the water where-ever it can is a best practice</string>
+
+    <string name="pondtitle">Pond preparation</string>
+    <string name="pondtitle1">•\tPond preparation is to be started with the drying of the pond bottom till it cracks and surface soil scraped to remove the black soil accumulated from the previous crop since it results in the deposition of considerable load of organic matter.\n"
+                "•\tSoil amendment measures like lime application must be practiced (depending on soil pH) similar to any other conventional shrimp farms\n"
+                "•\tProper treatment of discharge water is essential\n</string>
+
+    <string name="pondbottomtitle">Pond Bottom Preparation and Water Management Prior to Stocking</string>
+    <string name="pondbottomtitle1">•\t Removal of bottom sludge, particularly in ponds stocking higher densities (up to 8 PL/m2).\n"
+                "•\t Plowing on wet soil if the sludge has not been removed completely.\n"
+                "•\t Use of lime in pond preparation.\n"
+                "•\t Disinfection of pond water\n"
+                "•\t Fertilization reduces the risk of disease outbreak in lower stocking density farms.\n"
+                "•\t Water filtration using twin bag filters of 250 μm mesh size.\n"
+                "•\t Water conditioning for 10–15 days before stocking.\n</string>
+
+    <string name="seedselectiontitle">Seed Selection and Stocking</string>
+    <string name="seedselectiontitle1">•\t Uniform size and color post-larvae (PLs), actively swimming against the water current. Stocking of poor\n"
+                "•\t Quality of seed (less active, more mortality during transportation and size of less than 16 mm in case of nursery\n"
+                "•\t reared juveniles increase the risk of shrimp disease outbreak.\n"
+                "•\t Stocking Pathogen Free (SPF) Larvae (SPF shrimp stocks are available in some countries)\n"
+                "•\t Longer transport time (>6 hours) of the seed from hatchery or nursery to the pond also increases the likelihood of a subsequent disease outbreak.\n"
+                "•\t Weak PL elimination before stocking using formalin (100 ppm) stress for 15–20 minutes in continuously aerated water.\n"
+                "•\t On-farm nursery rearing of PLs for 15–20 days.\n"
+                "•\t Stocking into green water and avoiding transparent water during stocking\n</string>
+
+    <string name="otherTechtitle">Other technologies technique</string>
+    <string name="otherTechtitle1">•\t The use of SPF shrimp is an important component of any biosecurity plan and the stocking of SPF post larvae can prevent the introduction of specifically listed pathogens from infected seed.\n"
+                "\n"
+                "•\t A commercial shrimp farm that relied on zero water exchange, low protein feeds, deep ponds, and heavy aeration \n"
+                "\n"
+                "•\t BFT systems typically are stocked at high densities (>100 shrimp/m2) and experience little or no water exchange. Initial fill water may pass through a 250-lm screen to "
+                "exclude crustacean vectors and may be held in a reservoir and treated with chlorine or crustacides before filling the ponds.\n</string>
+
+    <string name="beforetitle">Before disease hits your farm</string>
+    <string name="beforetitle1">1.\tObserve GMP or good management practices\n"
+                "2.\tProvide settling and treatment pond\n"
+                "3.\tProvide reservoir with fish (tilapia is popular)\n"
+                "4.\tUse good quality fry (or WSSV-negative fry as certified by a disease diagnostic lab)\n"
+                "5.\tInstall biosecurity measures such as: -\n"
+                "Tire bath at the farm entrance\n"
+                "Footbath and hand disinfection at the pond entrance\n"
+                "Nets and high-density polyethylene liners as crab fence\n"
+                "Bird scaring device\n"
+                "Individual paraphernalia (feeding trays and boat, secchi disc, refractometer, basins, sampling materials) for each pond\n</string>
+
+
+    <string name="aftertitle">AFTER disease outbreak</string>
+    <string name="aftertitle1">To avoid recurrence:\n"
+                "1-\t Review your operations.\n"
+                "2-\t Did you do GMPs? \n"
+                "3-\t Were the Biosecurity measures in place?\n"
+                "4-\t Was your monitoring adequate?\n"
+                "5-\t Modify culture system (use of green water, reservoir; closed/semi-closed system; crop rotation; screening and filtration)\n"
+                "6-\t Monitor the presence of viruses by sending tissue samples regularly to a disease diagnostic laboratory\n"
+                "\n</string>
+    <string name="blank">""</string>
+
+    <string name="harvesttitle">Harvesting techniques\n"
+                "Extensive and semi_intensive ponds \n</string>
+    <string name="harvestdescription">are harvested by draining the pond at low tide through a bag net installed in the outlet sluice gate.\n"
+                "If the tide does not allow harvesting, the water can be pumped out.\n"
+                "In some larger farms harvesting machine pumps shrimp and water up to the pond bank where they are dewatered\n</string>
+
+    <string name="Intensivettitle">Intensive ponds</string>
+    <string name="Intensivedescription">may be harvested similarly and small 2-6-man seine nets are dragged around the pond to corral shrimp to the side of "
+                "the pond from where they are removed by cast or dip net or perforated buckets.</string>
+
+    <string name="harvestingtitle">Methods of harvesting \n"
+                "Traditional method-Cast net</string>
+    <string name="harvestingdescriotion">commonly applied by extensive, semi-extensive, and intensive system of culture in the many regions a world.</string>
+
+    <string name="partialharvestttitle">partial harvest</string>
+    <string name="partialharvestdescription">it is not necessary to drain the pond water if the quantity is small; the harvest procedure is "
+                "simply throw over the cast net on the pond surface</string>
+
+    <string name="totalharvestttitle">total harvest</string>
+    <string name="totalharvestdescription">following steps are followed by semi – intensive and intensive culture:\n\n"
+                "1-\tReduce the water depth to 80 cm one day before the harvest date.\n"
+                "2-\tHarvest net is properly attached and installed into the water gate of the drain canal.\n"
+                "3-\tRemaining prawns left at the pond bottom can be harvested manually by hand picking them up.\n"
+                "4-\tPrepare two tanks half-filled with water, one tank is for washing and the other is for chilling the prawns.\n"
+                "5-\tAfter washing the prawns it must be transferred immediately to the chilling tank.\n"
+                "6-\tFrom the chilling tank, prawns are transferred to the sorting table to classify them according to size.\n"
+                "7-\tClassified prawns are packed in Styrofoam boxes with alternate layers of ice and prawns to preserve temporarily for transportation\ne</string>
+
+    <string name="Electricttitle">Electric shocker method</string>
+    <string name="Electricdescription">Is commonly used in Taiwan and Japan especially for prawn harvest. It is composed of metal wire frame and drag-net battery and transformer. Installed in the frame "
+                "are brass wires or rods composed of positive and negative electrodes installed alternately, the wiring is insulated against water</string>
+
+    <string name="Becarefultitle">Be careful</string>
+    <string name="Becarefuldescription">To avoid soft shell, the harvest time must be within 4 hours only \n"
+                "One day before harvest, check the prawn by using cast net if soft –shell is plenty, "
+                "delay the harvest date 3-5 days to assure better quality\n</string>
+
+    <string name="Postharvesttitle">Post-harvest</string>
+    <string name="Postharvestdescription">the shrimps should be washed and placed immediately in chilled water (10–15°C) for about 15 minutes. They are then packed in"
+                " Styrofoam box with alternate layers of crushed ice at a ratio of 1:1. Smaller Styrofoam boxes are preferred to facilitate transportation. If bigger styrofoam boxes are used, "
+                "it is better to fill up the box with chilled water, shrimps and ice to avoid physical damage on the shrimps at the bottom.</string>
+
+    <string name="superintensivettitle">In super-intensive systems</string>
+    <string name="superintensivedescription">the shrimp are simply harvested with large scoop nets when required for processing.</string>
+    <string name="knoeYourShrimpLabel">Know Your Shrimp</string>
+    <string name="commonSpeciesLabel">Common Species</string>
+    <string name="siteSelectionLabel">Site Selection</string>
+    <string name="waterQualityLabel">Water Quality</string>
+    <string name="designandeConstruvtionLabel">Design and Construction</string>
+    <string name="managementPractiveLabel">Management Practice</string>
+    <string name="harvesandpostharvestLabel">Harvest and Postharvest</string>
+    <string name="DiseasesLabel">Diseases and Biosecurity</string>
+    <string name="traditonalLabel">Traditional and Modern Shrimp Culture</string>
+    <string name="Ndirection">N</string>
+    <string name="NEdirection">NE</string>
+    <string name="Edirection">E</string>
+    <string name="SEdirection">SE</string>
+    <string name="Sdirection">S</string>
+    <string name="SWdirection">SW</string>
+    <string name="Wdirection">W</string>
+    <string name="NWdirection">NW</string>
+
+
+    <string name="Aquamimicrytitle1">Aquamimicry Shrimp Farming</string>
+    <string name="Aquamimicrydescription1">Aquamimicry is the intersection of aquatic biology and technology (symbiotic) synergistically in mimicking nature of aquatic ecosystems to create living organisms for the well-being development of aquatic animals.\n"
+                "We are accelerating advancement in the field of aquaculture by combining microbial activity with natural feed source in a coordinated fashion; we create living organisms to rebalance our environment for Sustainable Aquaculture.\n"
+                "This is done by fermenting a carbon source, such as rice or wheat bran,"
+                "with probiotics (like Bacillus sp.) and releasing their nutrients.\n</string>
+    <string name="Aquamimicrytitle2">Fermentation process in aquamimicry</string>
+    <string name="Aquamimicrydescription2">A complex carbon source, such as rice, wheat bran or soya bean, is mixed with water (1:5-10 ratio) and probiotics under aeration for 24 hours. If the bran is finely powdered, the entire mixture is added slowly to the pond.\n "
+                "If crumbled, the upper “milk” or “juice” is added to the pond and the bran solids are fed to fish in the biofilter pond.\n"
+                "Stoking density :20 pcs per sqm\n"
+                "Dose 1 ppm of fermented rice bran FRB/day\n</string>
+    <string name="Aquamimicrytitl3">Advantages of aquamimicry</string>
+    <string name="Aquamimicrydescription3">•\tEliminating disease\n\n"
+                "•\tMaintain water quality\n"
+                "•\tMinimizing water exchanges \n"
+                "•\tDecreasing the feed conversion ratio\n"
+                "•\tDevelopment of health management. \n"
+                "•\tReducing stress associated with fluctuating water quality\n"
+                "•\tMinimizing environmental conditions favorable to pathogens\n"
+                "•\tGreater biosecurity and sourcing of specific pathogen free animals.\n</string>
+
+
+    <string name="Biofloctitle1">Biofloc technology (aerated mixed ponds)</string>
+    <string name="Bioflocdescription1">In recent years the aquaculture industry has come under scrutiny for contributing to environmental degradation.  Interest in closed aquaculture systems for the production of shrimp and fish is increasing,"
+                " mostly due to some key environmental and marketing advantages over extensive systems. Bioflocs are aggregates (flocs) of algae, bacteria, protozoans, and other kinds of particulate organic matter such as feces and uneaten feed. Each floc is held together in a loose matrix of mucus that is secreted by bacteria, bound by filamentous microorganism. "
+                "The biofloc community also includes animals that are grazers of flocs, such as some zooplankton and nematodes. Large bioflocs can be seen with the naked eye, but most are microscopic. Flocs in a typical greenwater biofloc system are rather large, around 50 to 200 microns, and will settle easily in calm water.\n"
+                "•\tWhen water is reused, the risk of discharging pollution is reduced This is a benefit for protecting natural resources\n" +
+                "•\tEnvironmental regulations and discharge fees are inhibitive in most regions\n"
+                "•\tIntroduction of contaminants and pathogen from the environment to cultured animals is unlikely, especially when biosecurity measures such as source water disinfection are employed. \n\n"
+                "•\tUsing closed systems limits the chance of animal escapement.\n"
+                "•\tHelping to prevent exotic species and disease introductions to the natural environment.\n"
+                "•\tCulturing shrimp in biofloc systems is that multiple external filtration systems are not required.\n"
+                "•\tReducing start up and operational expenses.\n"
+                "•\timproved growth rate.\n"
+                "•\timproved feed conversion ratio.\n"
+                "•\tThe dry-weight protein content of biofloc ranges from 25 to 50 percent.\n"
+                "•\tTreatment of waste organic.\n"
+                "Biofloc also has disadvantages such as\n\n"
+                "•\tHigh electricity required\n"
+                "•\tProfessional workers.\n"
+                "Suitable culture species for biofloc: \n \n"
+                "A basic factor in designing a biofloc system is the species to be cultured. Biofloc systems work best with species that are able to derive some nutritional benefit from the direct consumption of floc. Biofloc systems are also most suitable for species that can tolerate high solids concentration in water and are generally tolerant of poor water quality. Species such as shrimp and tilapia have physiological adaptations that allow them to consume biofloc and digest microbial protein, thereby taking advantage of biofloc as a food resource. "
+                "Nearly all biofloc systems are used to grow shrimp, tilapia, or carps. Channel catfish and hybrid striped bass.\n</string>
+    <string name="Biofloctitle2">Basic types of biofloc systems</string>
+    <string name="Bioflocdescription2">Few types of biofloc systems have been used in commercial aquaculture. The two basic types are those that are exposed to natural light and biofloc systems not exposed to natural light. include outdoor, lined ponds or tanks for the culture of shrimp or lined raceways for shrimp culture in greenhouses. Most biofloc systems in commercial use are greenwater. However, some biofloc systems (raceways and tanks) have been"
+                "installed in closed buildings with no exposure to natural light. These systems are operated as “brown- water” biofloc "
+                "systems.</string>
+    <string name="Biofloctitle3">Densities</string>
+    <string name="Bioflocdescription3">The optimal shrimp density for a super-intensive system will depend on management and production goals.\n"
+                "dense biomass of L. Vannamei (300-800 shrimp/m3 can be controlled.\n</string>
+    <string name="Biofloctitle4">Aeration</string>
+    <string name="Bioflocdescription4">When selecting aeration devices it is important to take into account system size as well the density of animals\n"
+                "Air blowers are commonly used in super-intensive systems.\n"
+                "Air lift mechanisms are commonly used to move and aerate water\n</string>
+
+
+    <string name="Zerotitle1">Biofloc technology (aerated mixed ponds)</string>
+    <string name="Zerodescription1">In recent years the aquaculture industry has come under scrutiny for contributing to environmental degradation.  Interest in closed aquaculture systems for the production of shrimp and fish is increasing,"
+                " mostly due to some key environmental and marketing advantages over extensive systems. Bioflocs are aggregates (flocs) of algae, bacteria, protozoans, and other kinds of particulate organic matter such as feces and uneaten feed. Each floc is held together in a loose matrix of mucus that is secreted by bacteria, bound by filamentous microorganism. "
+                "The biofloc community also includes animals that are grazers of flocs, such as some zooplankton and nematodes. Large bioflocs can be seen with the naked eye, but most are microscopic. Flocs in a typical greenwater biofloc system are rather large, around 50 to 200 microns, and will settle easily in calm water.\n"
+                "•\tWhen water is reused, the risk of discharging pollution is reduced This is a benefit for protecting natural resources\n"
+                "•\tEnvironmental regulations and discharge fees are inhibitive in most regions\n"
+                "•\tIntroduction of contaminants and pathogen from the environment to cultured animals is unlikely, especially when biosecurity measures such as source water disinfection are employed. \n\n"
+                "•\tUsing closed systems limits the chance of animal escapement.\n"
+                "•\tHelping to prevent exotic species and disease introductions to the natural environment.\n"
+                "•\tCulturing shrimp in biofloc systems is that multiple external filtration systems are not required.\n"
+                "•\tReducing start up and operational expenses.\n"
+                "•\timproved growth rate.\n"
+                "•\timproved feed conversion ratio.\n"
+                "•\tThe dry-weight protein content of biofloc ranges from 25 to 50 percent.\n"
+                "•\tTreatment of waste organic.\n"
+                "Biofloc also has disadvantages such as\n\n"
+                "•\tHigh electricity required\n"
+                "•\tProfessional workers.\n"
+                "Suitable culture species for biofloc: \n \n"
+                "A basic factor in designing a biofloc system is the species to be cultured. Biofloc systems work best with species that are able to derive some nutritional benefit from the direct consumption of floc. Biofloc systems are also most suitable for species that can tolerate high solids concentration in water and are generally tolerant of poor water quality. Species such as shrimp and tilapia have physiological adaptations that allow them to consume biofloc and digest microbial protein, thereby taking advantage of biofloc as a food resource. "
+                "Nearly all biofloc systems are used to grow shrimp, tilapia, or carps. Channel catfish and hybrid striped bass.\n</string>
+    <string name="Zerotitle2">Basic types of biofloc systems</string>
+    <string name="Zerodescription2">Few types of biofloc systems have been used in commercial aquaculture. The two basic types are those that are exposed to natural light and biofloc systems not exposed to natural light. include outdoor, lined ponds or tanks for the culture of shrimp or lined raceways for shrimp culture in greenhouses. Most biofloc systems in commercial use are greenwater. However, some biofloc systems (raceways and tanks) have been"
+                "installed in closed buildings with no exposure to natural light. These systems are operated as “brown- water” biofloc "
+                "systems.</string>
+    <string name="Zerotitle3">Densities</string>
+    <string name="Zerodescription3">The optimal shrimp density for a super-intensive system will depend on management and production goals.\n"
+                "dense biomass of L. Vannamei (300-800 shrimp/m3 can be controlled.\n</string>
+    <string name="Zerotitle4">Aeration</string>
+    <string name="Zerodescription4">When selecting aeration devices it is important to take into account system size as well the density of animals\n"
+                "Air blowers are commonly used in super-intensive systems.\n"
+                "Air lift mechanisms are commonly used to move and aerate water\n</string>
+
+
+
+
+    <string name="Sustainabletitle1">Sustainable culture of shrimp in green houses</string>
+    <string name="Sustainabledescription1">Greenhouse technology is the unique technique of providing favorable conditions to shrimp. </string>
+    <string name="Sustainabletitle2">Advantages</string>
+    <string name="Sustainabledescription2">1.\tProtected Environment for Shrimp Cultivation Ponds\n"
+                "2.\tTemperature control enabling:\n\n"
+                "a.\twinter shrimp farming\n"
+                "b.\thigh survival rates\n"
+                "c.\tquality improvement\n\n"
+                "3.\tEarly season harvesting during high market demand in low supply seasons.\n"
+                "4.\tHigh profitability before and after shrimp sales peak.\n"
+                "5.\tGood return of investment\n"
+                "6.\tit brings high income and controls environmental pollution\n</string>
+
+    <string name="Sustaunabletitle3">Disadvantages</string>
+    <string name="Sustainabledescription32">1.\tHigh upfront and operating expenses.\n"
+                "2.\tKnowledge and skills required.\n"
+                "3.\tHigh maintenance cost\n"
+                "\n"
+                "This closed, modern model farm white leg shrimp with a density of 200-250 shrimp/m2. After 2.5 to 3 months, "
+                "it is possible to harvest with a capacity of 60-70 tons/ha type 40-45 shrimp/kg. In an area of 60 hectares, each year.\n</string>
+    <string name="Sustainabletitle4">Green house structure design</string>
+    <string name="Sustainabledescription4">•\tBased on concrete PVC protected metal columns and polypropylene ropes.\n"
+                "•\tCovering material the plastic polymers materials used to cover the green house to allow maximum heat gain and reduce heat escaped.\n"
+                "\n"
+                "•\tA 60 shade cloth covered the outside of the green house during the summer months. \n"
+                "\n"
+                "•\tA single layer of 200-micron clear UV-resistant polyethylene\n"
+                "•\tPlastic material covers the winter months.\n</string>
+
+    <string name="Extensivetitle1">Extensive</string>
+    <string name="Extensivedescription1">•\tPost larvae enter the pond with the tide or are stocked at 4/m3. Sometimes the pond entrance is screened to limit entrance of predators.\n"
+                "•\tWater is not fertilized and shrimp are not fed\n </string>
+    <string name="Extensivetitle2">Semi-intensive</string>
+    <string name="Extensivedescription2">•\tPost larvae are stocked into ponds at 15 to 25/m3 and are fed daily. Some water exchange is practiced to maintain water quality.\n"
+                "•\tShrimp are fed sinking pellets which are distributed over the pond surface. \n"
+                "•\tFeeding trays are sometimes used to help determine shrimp appetite.\n</string>
+
+    <string name="Extensivetitle3">Intensive</string>
+    <string name="Extensivedescription3">Shrimp are stocked at 35 -250/m2 in tanks and small ponds with heavy aeration and water exchange</string>
+
+
+
+    <string name="know_your_shrimp_data_firstmorphology_description">Shrimp body is divided into 2 parts, the head and body \n The head (6 segments) fused with the chest (8 segments) called the cephalothorax, consists of 13 sections. \n the abdomen consists of 6 segments, each segment has a pair of swimming feet.</string>
+
+    <string name="know_your_shrimp_secondmorphology_description">The head protected by a shell called a carapace, rostrum at the front of the carapace, at the top of the rostrum there are serrations which totaled 7-9, while the bottom three serrations.</string>
+
+    <string name="know_your_shrimp_data_thirdmorphology_description">the head including: a pair of compound eyes, mouth with jaws (mandibles) are strong, a pair of large antennae, a pair of fins head (scophocerit), a pair of jaws auxiliaries (maxilliped), and 5 pairs of feet road (pereopod).</string>
+
+    <string name="know_your_shrimp_data_forthmorphology_description">There are five pairs of swimming legs (pleopods) are attached to the first segment to fifth segment while the sixth segment swimming legs changing its form into a tail fan (urophoda). \n Above tail fan there is tail that tapered at the edges is called the telson.</string>
+
+    <string name="management_practice_Data_title1">Management practices \n Pond preparation</string>
+
+    <string name="management_practice_data_description1">Shrimp are benthic animals and live on the pond bottom. \\n Each type of farm has different stages with each other. To reduce the risks and constraints to disease at the time of culture period \\n preparation must be done as carefully as possible \\n</string>
+
+    <string name="managment_practice_data_title2">For earthen Ponds</string>
+
+    <string name="managment_practice_data_description2">1-\t pond bottoms should be completely sun dried to oxidize organic matter in pond mud before stocking shrimp, drying and cracking of pond bottom enhances aeration and reducing organic material and improves water quality. \n 2-\tthe pond dike should be strengthening with soil wherever it has become weak and the inner slope of the dike should also be consolidated with soil. \n 3-\tploughing bottom soils with disk plough for 5-10 cm can enhance drying to increase aeration and accelerate organic matter decomposition and oxidation of organic matter.\n 4-\tleveling and compaction must be followed after ploughing.\n 5-\tliming of shrimp ponds is done to neutralize soil acidity, increase the total alkalinity, total hardness concentration and enhance the primary food productivity in the pond water.\n 6-\tIn case of slight adjustment of pH during pre_stocking preparation, dolomite can be used this also would help in plankton development \n 7-\tIn low saline water liming can improve phosphorus availability and enhance pond productivity \n</string>
+
+    <string name="mangement_practice_data_title3">For ponds with full HDPE\n</string>
+
+    <string name="managment_practice_data_description3">pond preparation includes: 1-\tcleaning the pond bottom and walls of the rest of the dirt (mud, tritip, shellfish and others)\n 2-\tcleaning and repair of plastic and Paddle Wheel Aerator (PWA)\n 3-\tsterilization using chlorine at the bottom of the pond and in the pipe.\n</string>
+
+    <string name="managment_practice_data_title4">Shrimp Seeds source\n</string>
+
+    <string name="managment_practice_data_description4">1-small shrimp (post larvae) for stocking ponds can be captured from the wild.\n Small mesh push nets are used in the shallow estuaries to capture post larvae. \n Post larvae captured in the wild often have both desirable and undesirable shrimp species along with small predacious fishes. \n Difficult to separate desirable and undesirable shrimp PLs\n\n 2-Shrimp post larvae from hatcheries\n (from captivity).\n Numerous larval stages are passed before reaching the post larval stage.\n Natural food (phytoplankton) must be provided to the larval stages grown in the hatchery.\n However, only desirable shrimp species are raised and contamination with undesirable organisms is not a problem.\n</string>
+
+    <string name="managment_practice_data_title5">Seed selection\nSeed selection depend on\n</string>
+
+    <string name="management_practice_data_description5">Gross examination\n (size, color, activity, behavior, feeding and gut fullness)\n Microscopic examination (x40)\n (gut condition, fouling, deformity) \n Stress test\n Salinity (28:32ppt)\n Vibrio test\n (To check the potentially harmful vibrio spp in PL)\n PCR \n Testing for WSSV.\n</string>
+
+    <string name="managment_practice_data_title6">Seed counting</string>
+
+    <string name="managment_practice_data_description6">1-\tSelect any one bag and count the fry head.\n 2-\tThe total number of fry counted from this bag represent the quantity of the other uncounted bags\n</string>
+
+    <string name="managment_practice_data_title7">Acclimation of the fry</string>
+
+    <string name="managment_practice_data_description7">Important step before stocking fry to pond\npurpose is to make the both transport and pond water condition (temperature and salinity) to be same (or almost same) to minimize stress on the fry\n Water salinity, maximum difference in salinity is 2 ppt.\n Water temperature, the maximum difference is 2°C.\n Time of stocking\n morning (6-9 am) [preferable]\n Afternoon (5-9 pm).\n Paddle wheel must be activated; at least 3 – 4 hours a day for 2-3 days before stocking date, and 3-4 hours before the stocking of fry, to ensure adequate D.O.\n</string>
+
+    <string name="managment_practice_data_title8">Stocking procedure</string>
+
+    <string name="managment_practice_data_description8">Stocking time between 6-9 AM when the water temperature is low (around 26°C).\n Avoid stocking during cloudy and rainy days to prevent D.O. problems. \n Float the plastic bags containing fry in the pond water for at least 15:20 minutes to equalize the water temperature in the bag and in the pond. \n Open the bags carefully once the temperature difference is 1 – 2°C.\n check the salinity If the salinity difference is within the range of 3- 5 ppt, then the fry are ready to be released into the pond\n</string>
+
+    <string name="managment_practice_data_title9">Feeding</string>
+
+    <string name="managment_practice_data_description9">Shrimp are benthic feeders and will not rise to the water surface to eat floating pellets\nShrimp are fed sinking pellets which are distributed over the pond surface. \nShrimp are unable to consume a whole pellet but slowly nibble the pellet, consuming small particles. \nFeed can be placed on trays to help determine shrimp appetite.\nTrays are checked 1 to 2 hours after feeding to see if the daily allotment of feed is consumed by the shrimp. \nIn the first month, fries are very dependent on natural food, but for intensive culture systems, natural food available is not enough. Therefore, the first month feeding program assumes that natural food is not enough. \nAfter the first month, feeding on the next month following the feed trays control. \nFor the pond with an area of 0.5 ha, the recommended amount of feed trays is 3-4 units. \nAddition and reduction in feed made in accordance with the results obtained in the feed trays. \nIf the feed on feed trays expires, the feed for the next day can be added up to 5% of the feed today. \nif the feed in feed trays not exhausted, the feed for the next day can be cut to 40%. \n\n</string>
+
+    <string name="site_selection_description">The selection of a suitable site always play a major role in shrimp farming.\nThe determination of a site for shrimp farming is made only after through analysis of information on topography, ecosystem, meteorological and socioeconomic conditions.\n</string>
+
+    <string name="site_selection_criteria">1. Water quality\n2.\tTidal fluctuations\n 3.\tSoil\n 4.\tTopography\n 5.\tVegetation\n 6.\tSource of seed\n 7.\tAccessibility\n 8.\tOther factor\n</string>
+
+    <string name="site_selection_water_quality">Water quality includes all the inherent physico-chemical and microbiological characteristics of water.\npH is generally considered as one of the most important factors. In any chosen site, the pH of the water preferably range from 7.5 to 8.5.\n\nthe oxygen level is preferably not lower than 4 ppm.\nthe water must not be too turbid. \n\nThe water is preferably to be rich in microorganisms.\n\n Salinity variation is considered a determinant factor in shrimp production.\n\nOptimal level varies from species to species. For instance, the tiger shrimp (Penaeus monodon) grows faster at 15–30 ppt. The white shrimp (P. indicus and P. merguiensis) tolerate higher salinity ranges (25–40 ppt).\n</string>
+
+    <string name="site_selection_tidal">The tidal characteristics are of extreme importance in determining pond bottom elevation of dike, slope ratio and drainage system.\n Areas best suited for shrimp farming should have moderate tidal fluctuations preferably 2–3 meters. \n\nIn areas where the tidal range is greater than 4 meters, the site may prove uneconomical to develop or operate as large and high pond dikes will be required.\nIn areas where tidal range is less than one meter, water management will be expensive requiring the use of pumps.\n\nknowledge of the occurrence of highest high and lowest low water levels. This should be known so that the size and height of the perimeter dike can prevent flooding. \n\ndirection and strength of water current should be known for provisions on dikes construction to reduce erosion.\n</string>
+
+    <string name="site_selection_soil">The soil at the proposed site should have enough clay contest to ensure that the ponds constructed will hold water.\n" Good quality dikes are usually built from sandy clay or sandy loam materials which harden and easily compacted.\n\nClay-loam or silty-clay loam at pond bottom promotes growth of natural food organisms.\nDuring pond construction, the subsoils are dug for dikes and the pond bottom levelled, the pyrites become oxidized producing sulphuric acid which acidifies the soil.\n\nThe pH of water becomes extremely low and hence affecting water quality and correspondingly reduced natural productivity.\n\nAlleviating acid sulphate conditions in ponds requires the use of lime and removal of acid by leaching and flushing.\n</string>
+
+    <string name="site_selection_topography">It is essential to have a detail topography of the selected site for pond design and farm layout.\nCoastal sites where the slopes run gently towards the sea are easier for pond development requiring less financial inputs since excavation is minimal.\n\nIn areas where the above conditions are not available, the use of mechanical pumps may be resorted. \nAssociated with topography related constraints are the availability of sufficient quantity of soil for dike construction obtained from excavation of ponds or from above ground bunds.\n\n\nIt may prove uneconomical if the site to be developed would require diking material to be transported from outside the chosen area.\n</string>
+
+    <string name="site_selection_vegetation">The type of vegetation in the area can be, to some extend, indicative of physical elevation and soil type.\nDominance of the mangrove plants Avicennia spp. is an indication of good and productive soil. \n\nOutgrowths of Rhizophora spp. which are usually characterized by dense prop root systems usually signifies soil types that are coarse and acidic.\nIt is of primary importance to consider density of shrubs at the site.\n These have to be cleared first before any land development can take place. \n Clearing operation can add up to the capital outlay.\n</string>
+
+    <string name="site_selection_source_of_seed">Close proximity of the site to the fry ground is advantageous in that the animals being collected for stocking are not subjected to too much transport and handling stress.\n</string>
+
+    <string name="site_selection_accessability">Accessibility is an important consideration in site selection. Overhead cost and delay in the transport of materials and products can be minimized\n</string>
+
+    <string name="site_selection_factors">Adequate consideration should be given to a number of farm related matters such as :\n1.\tthe availability and quality of labor, \n2.\tpeace and order situation \n3.\tthe area concerned, \n4.\tavailability and source of electricity and water supply,\n5.\tmarketing channels and facilities\nThe availability of technical assistance near the site is another advantage of a site is chosen in an aquaculture research institution.\n</string>
+
+    <string name="site_selection_source">http://www.fao.org/docrep/field/003/ac210e/AC210E03.htm\n</string>
+
+    <string name="water_quality_title1">Water Source</string>
+
+    <string name="water_quality_description1">\nfrom a sea ,from the deep wells, free from all types of pollution.</string>
+
+    <string name="water_quality_title2">Water Characteristic</string>
+
+    <string name="water_quality_title3">Water Quality Management</string>
+
+    <string name="water_quality_description3">1. Liming\nThe problem of low alkalinity (20 mg/l as CaC03) can be abated through application of liming materials such as dolomite and limestone.\n\nthey destroy the initial inoculum of decomposing bacteria which will increase nutrient organic load on pond bottom.\n\nLiming is done whenever the pH drops below 7.5 or the daily fluctuation in pH is more than 0.5.\n</string>
+
+    <string name="water_quality_title4">Water Quality Management</string>
+
+    <string name="water_quality_description4">2. Fertilization\nFertilization is required during the course of culture to maintain good algal bloom.\n\n10% of the original dose of fertilizer should be applied at weekly depending on the percentage of water exchange and the algal bloom.\n\nIt is advisable to check the inherent organic load, plankton and possible contamination in the water source by using Secchi disc.\nhigh value of transparency is indicative of poor plankton density and therefore water should be fertilized.\nLow value indicates that the plankton density is high.\n</string>
+
+    <string name="water_quality_title5">Water Quality Management</string>
+
+    <string name="water_quality_description5">3.\tWater exchange\nRegulation of environmental factors is mainly achieved by controlling water exchange.\n\nIn the case of low stocking density, water exchange is not required in well prepared ponds for first 30 days only water Level has to be maintained due to evaporation loss.\n\nwater exchange should be Exchange only be used when necessary to maintain the optimum water quality .\n \n- Water exchange should be done only under the following pond conditions:\n\n1.\tTransparency greater than 50 cm or less than 20 cm\n2.\tpH less than 7.5 or greater than8.5\n3.\tpH fluctuation in a day greater than 0.5\n4.\tShrimp are noticed on the water surface or on the sides of the pond\n5.\tFree ammonia level is greater than 0.1 mg/l\n</string>
+
+    <string name="water_quality_title6">Water Quality Management</string>
+
+    <string name="water_quality_description6">4.\tAeration\nis necessary in high stocking densities and to maintain water quality.\n\nNormally aeration will be required during the following situations:\n\n1.\tcloudy and rainy days.\n2.\tdissolved oxygen level dropping below 4 mg/l especially during early morning hours when the DO level will be at its minimum.\n3.\tExcessive algal blooms and application of water treatment additives. \n- Paddle wheel aerators @ 4-6 no/ha are generally used in shrimp ponds.\n</string>
+
+    <string name="water_quality_title7">Water Quality Management</string>
+
+    <string name="water_quality_description7">5. Feeding\nProper feed management is indispensable for successful and profitable shrimp culture.\n\nOverfeeding is more dangerous than under feeding as over feeding rate can degrade the pond bottom and can lead to " +excessive phytoplankton, DO depletion and toxic concentration of metabolites.\n</string>
+
+    <string name="water_quality_title8">Crisis management</string>
+
+    <string name="water_quality_description8">Effects of various abiotic factors on shrimp farming and their remedial measures are summarized in the following- Tables\n</string>
+
+    <string name="water_quality_title9">Chemical factors</string>
 
 </resources>

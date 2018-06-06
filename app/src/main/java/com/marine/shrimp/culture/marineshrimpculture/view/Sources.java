@@ -19,6 +19,9 @@ public class Sources extends AppCompatActivity {
         tv2 =findViewById(R.id.sources_description);
         tv3 =findViewById(R.id.sources_links);
 
+
+        // THESE TEXTS WON'T BE TRANSLATED
+
         text = "BIOSECURE SHRIMP FARMING TECHNOLOGY (central institute of brackish water aquaculture)\n" +
                 "•\tBiosecurity theory and practice on shrimp farms/hatcheries \n" +
                 "•\tCRC Handbook of Mariculture (Crustacean Aquaculture, Second Edition, Volume 1)\n" +

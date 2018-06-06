@@ -21,25 +21,22 @@ public class KnowYourShrimpData {
     public ArrayList<KnowYourShrimpModel> createList(){
 
         image =R.drawable.firstmorphology;
-        description= "Shrimp body is divided into 2 parts, the head and body." +"\n" +
-                "The head (6 segments) fused with the chest (8 segments) called the cephalothorax, consists of 13 sections." +"\n" +
-                "the abdomen consists of 6 segments, each segment has a pair of swimming feet.";
+        description= context.getString(R.string.know_your_shrimp_data_firstmorphology_description);
         model = new KnowYourShrimpModel(image,description);
         list.add(model);
 
         image = R.drawable.secondmorphology;
-        description= "The head protected by a shell called a carapace, rostrum at  the front of the carapace, at the top of the rostrum there are serrations which totaled 7-9, while the bottom three serrations.";
+        description= context.getString(R.string.know_your_shrimp_secondmorphology_description);
         model = new KnowYourShrimpModel(image,description);
         list.add(model);
 
         image =R.drawable.thirdmorphology ;
-        description= "the head including: a pair of compound eyes, mouth with jaws (mandibles) are strong, a pair of large antennae, a pair of fins head (scophocerit), a pair of jaws auxiliaries (maxilliped), and 5 pairs of feet road (pereopod).";
+        description= context.getString(R.string.know_your_shrimp_data_thirdmorphology_description);
         model = new KnowYourShrimpModel(image,description);
         list.add(model);
 
         image = R.drawable.forthmorphology ;
-        description= "There are five pairs of swimming legs (pleopods) are attached to the first segment to fifth segment while the sixth segment swimming legs changing its form into a tail fan (urophoda)." +"\n"+
-                "Above tail fan there is tail that tapered at the edges is called the telson.";
+        description= context.getString(R.string.know_your_shrimp_data_forthmorphology_description);
         model = new KnowYourShrimpModel(image,description);
         list.add(model);
 

@@ -21,7 +21,6 @@ public class WeatherAppWidget extends AppWidgetProvider {
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.weather_app_widget);
 
         if( tempModel != null) {
-
             TempModel mainTempModel = tempModel;
 
             StringBuilder tempDescription = new StringBuilder();

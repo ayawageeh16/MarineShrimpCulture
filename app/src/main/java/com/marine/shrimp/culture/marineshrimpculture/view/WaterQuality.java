@@ -57,9 +57,6 @@ public class WaterQuality extends AppCompatActivity implements View.OnClickListe
         data = waterQualityData.createList();
         listSize = data.size();
 
-
-
-
         final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
         // Use 1/8th of the available memory for this memory cache.
         final int cacheSize = maxMemory / 8;

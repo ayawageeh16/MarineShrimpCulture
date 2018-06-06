@@ -1,8 +1,12 @@
 package com.marine.shrimp.culture.marineshrimpculture.view;
 
 import android.app.LoaderManager;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.Loader;
+import android.graphics.Color;
 import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -17,7 +21,9 @@ import android.view.MenuItem;
 import com.marine.shrimp.culture.marineshrimpculture.R;
 import com.marine.shrimp.culture.marineshrimpculture.adapter.MainAdapter;
 import com.marine.shrimp.culture.marineshrimpculture.data.IconModel;
+import com.marine.shrimp.culture.marineshrimpculture.utils.Constants;
 import com.marine.shrimp.culture.marineshrimpculture.utils.IconsAsyncLoader;
+import com.marine.shrimp.culture.marineshrimpculture.utils.MyNotificationManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -99,6 +105,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getLoaderManager().initLoader(0, null, loaderCallbacks);
             setRecyclerView(recyclerView);
         }
+
+
+        /*
+         * If the device is having android oreo we will create a notification channel
+         * */
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            NotificationManager mNotificationManager =
+                    (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel mChannel = new NotificationChannel(Constants.CHANNEL_ID, Constants.CHANNEL_NAME, importance);
+            mChannel.setDescription(Constants.CHANNEL_DESCRIPTION);
+            mChannel.enableLights(true);
+            mChannel.setLightColor(Color.RED);
+            mChannel.enableVibration(true);
+            mChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
+            mNotificationManager.createNotificationChannel(mChannel);
+        }
+
+        /*
+         * Displaying a notification locally
+         */
+        MyNotificationManager.getInstance(this).displayNotification("Greetings", "Hello how are you?");
 
     }
     private void setRecyclerView (RecyclerView recyclerView){
@@ -253,7 +282,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putParcelableArrayList("ICONS", (ArrayList<? extends Parcelable>) iconsList);
+        outState.putParcelableArrayList(ACTIVITY_ICON_LIST, (ArrayList<? extends Parcelable>) iconsList);
     }
 
     @Override

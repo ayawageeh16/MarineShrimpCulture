@@ -15,7 +15,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/pond_preparation"
+        android:contentDescription="@string/pond_preparation"
         app:layout_constraintBottom_toTopOf="@+id/seed_source_btn"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -25,7 +25,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/seed_source"
+        android:contentDescription="@string/seed_source"
         app:layout_constraintBottom_toTopOf="@+id/seed_selection_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -36,7 +36,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/seed_selection"
+        android:contentDescription="@string/seed_selection"
         app:layout_constraintBottom_toTopOf="@+id/seed_count_btn"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -46,7 +46,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/seed_count"
+        android:contentDescription="@string/seed_count"
         app:layout_constraintBottom_toTopOf="@+id/acclimation_btn"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -56,7 +56,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/acclimation"
+        android:contentDescription="@string/acclimation"
         app:layout_constraintBottom_toTopOf="@+id/stock_btn"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -66,7 +66,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/stock"
+        android:contentDescription="@string/stock"
         app:layout_constraintBottom_toTopOf="@+id/feeding_btn"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -76,7 +76,7 @@
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        android:text="@string/feeding"
+        android:contentDescription="@string/feeding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
