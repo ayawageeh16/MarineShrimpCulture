@@ -106,5 +106,6 @@
     <string name="card_rv_image">card image</string>
     <string name="weather_image">weather image</string>
     <string name="widget_image">widget image</string>
+    <string name="app_tag">Marine Shrimp App</string>
 
 </resources>

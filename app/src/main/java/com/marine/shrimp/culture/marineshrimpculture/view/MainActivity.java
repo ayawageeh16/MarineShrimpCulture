@@ -3,6 +3,7 @@ package com.marine.shrimp.culture.marineshrimpculture.view;
 import android.app.LoaderManager;
 import android.content.Intent;
 import android.content.Loader;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
     private final static String ACTIVITY_ICON_LIST= "Activity icon list";
     private DrawerLayout drawerLayout ;
     private NavigationView navigationView;
@@ -40,9 +42,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView = findViewById(R.id.navigation_menu);
         recyclerView = findViewById(R.id.main_recyclerView);
         setNavigationView();
+
         if (savedInstanceState !=null){
             if (savedInstanceState.containsKey(ACTIVITY_ICON_LIST)){
+
                 iconsList=savedInstanceState.getParcelableArrayList(ACTIVITY_ICON_LIST);
+
                 setRecyclerView(recyclerView);
                 adapter= new MainAdapter(iconsList, new MainAdapter.OnItemClickedListener() {
                     @Override
@@ -52,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             Intent intent = new Intent(MainActivity.this, KnowYourShrimp.class);
                             startActivity(intent);
                         }
-                      else if (id == 2){
+                        else if (id == 2){
                             Intent intent = new Intent(MainActivity.this, CommonSpecies.class);
                             startActivity(intent);
                         }
@@ -98,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
     private void setRecyclerView (RecyclerView recyclerView){
 
-       sglm = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+        sglm = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(sglm);
 
     }
@@ -120,35 +125,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         Intent intent = new Intent(MainActivity.this, KnowYourShrimp.class);
                         startActivity(intent);
                     }
-                     else if (id == 2){
+                    else if (id == 2){
                         Intent intent = new Intent(MainActivity.this, CommonSpecies.class);
                         startActivity(intent);
                     }
-                     else if (id == 3){
+                    else if (id == 3){
                         Intent intent = new Intent(MainActivity.this, SiteSelection.class);
                         startActivity(intent);
                     }
-                     else if (id == 4){
+                    else if (id == 4){
                         Intent intent = new Intent(MainActivity.this, WaterQuality.class);
                         startActivity(intent);
                     }
-                     else if (id ==5){
+                    else if (id ==5){
                         Intent intent = new Intent(MainActivity.this, DesignAndConstruction.class);
                         startActivity(intent);
                     }
-                     else if (id ==6){
+                    else if (id ==6){
                         Intent intent = new Intent(MainActivity.this, ManagementPractice.class);
                         startActivity(intent);
                     }
-                     else if (id ==7){
+                    else if (id ==7){
                         Intent intent = new Intent(MainActivity.this, HarvestAndPostHarvest.class);
                         startActivity(intent);
                     }
-                     else if (id ==8){
+                    else if (id ==8){
                         Intent intent = new Intent(MainActivity.this, DiseasesAndBiosecurity.class);
                         startActivity(intent);
                     }
-                     else if (id ==9){
+                    else if (id ==9){
                         Intent intent = new Intent(MainActivity.this, TraditionalAndModernShrimpCulture.class);
                         startActivity(intent);
                     }
@@ -243,6 +248,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 recyclerView.setAdapter(adapter);
             }
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelableArrayList("ICONS", (ArrayList<? extends Parcelable>) iconsList);
     }
 
     @Override
