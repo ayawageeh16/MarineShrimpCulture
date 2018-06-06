@@ -91,10 +91,6 @@
             android:label="@string/Sources"
             android:parentActivityName=".view.MainActivity" />
         <activity
-            android:name=".view.SettingsActivity"
-            android:label="@string/Settings"
-            android:parentActivityName=".view.MainActivity" />
-        <activity
             android:name=".view.WeatherActivity"
             android:label="@string/Weather"
             android:parentActivityName=".view.MainActivity" />
